@@ -46,7 +46,7 @@ Agora o algoritmo está bem mais rápido, com uma complexidade de O(Q*sqrt(N)), 
 
 Estamos esquecendo de algo muito importante, se um dado número é primo, então duas vezes esse número não é primo, 3 vezes esse número não é primo e assim por diante, podemos visualizar isso na animação abaixo:
 
-![Animação do crivo de Eratóstenes](assets/crivo.gif)
+![Animação do crivo de Eratóstenes](../assets/crivo.gif)
 
 Podemos aplicar isso da seguinte forma, poderíamos usar um vetor e percorrer todos os números de 2 a N, se ele estiver marcado, o número é um primo, então desmarcamos todos os múltiplos desse primo menores que N  
 
