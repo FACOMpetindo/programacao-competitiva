@@ -10,6 +10,8 @@ Inicialmente os códigos serão puramente em python, pois é a linguagem ensinad
 
 Ao final de cada artigo, haverá uma lista de exercícios para treinamento, com links para os exercícios no Beecrowd.
 
+Caso você queira ver a solução de algum exercício, você pode acessar o [repositório de soluções](https://github.com/falcao-g/beecrowd)
+
 ## ❓ Como contribuir
 
 Caso queira contribuir, abra o arquivo das [orientações de contribuição](CONTRIBUTING.md).
@@ -31,3 +33,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 
 ## ⚙️ Conteúdo
 1. [Conjuntos](Python/conjuntos.md)
+2. [Crivo de Erástotenes](Python/crivo.md)
