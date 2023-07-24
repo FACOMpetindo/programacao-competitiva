@@ -34,3 +34,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 ## ⚙️ Conteúdo
 1. [Conjuntos](Python/conjuntos.md)
 2. [Crivo de Erástotenes](Python/crivo.md)
+3. [Algoritmo de Euclides](Python/euclides.md)
