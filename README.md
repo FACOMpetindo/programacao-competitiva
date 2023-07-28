@@ -36,3 +36,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 2. [Crivo de Erástotenes](Python/crivo.md)
 3. [Algoritmo de Euclides](Python/euclides.md)
 4. [Algoritmo guloso](Python/guloso.md)
+5. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)
