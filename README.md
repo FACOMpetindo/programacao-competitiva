@@ -40,3 +40,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 5. [Algoritmo guloso](Python/guloso.md)
 6. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)
 7. [Busca Binária](Python/busca_binaria.md)
+8. [Manipulação de bits](Python/bits.md)
