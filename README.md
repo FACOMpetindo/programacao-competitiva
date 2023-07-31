@@ -39,3 +39,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 4. [Algoritmo de Euclides](Python/euclides.md)
 5. [Algoritmo guloso](Python/guloso.md)
 6. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)
+7. [Busca Binária](Python/busca_binaria.md)
