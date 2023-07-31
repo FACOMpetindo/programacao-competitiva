@@ -32,8 +32,10 @@ Este repositório assume que você já sabe o básico de Python, como:
 Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ) do Gustavo Guanabara.
 
 ## ⚙️ Conteúdo
-1. [Conjuntos](Python/conjuntos.md)
-2. [Crivo de Erástotenes](Python/crivo.md)
-3. [Algoritmo de Euclides](Python/euclides.md)
-4. [Algoritmo guloso](Python/guloso.md)
-5. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)
+
+1. [Fast I/O](Python/fast_io.md)
+2. [Conjuntos](Python/conjuntos.md)
+3. [Crivo de Erástotenes](Python/crivo.md)
+4. [Algoritmo de Euclides](Python/euclides.md)
+5. [Algoritmo guloso](Python/guloso.md)
+6. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)

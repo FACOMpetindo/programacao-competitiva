@@ -22,4 +22,3 @@ Para contribuir com um tópico, você deve seguir alguns passos:
 6. Faça um commit com uma mensagem que descreva o que você fez.
 7. Após isso, faça o push para o repositório do fork.
 8. Logo após o push, acesse o repositório do fork no GitHub e clique no botão "Compare & pull request".
-
