@@ -42,3 +42,4 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 7. [Busca Binária](Python/busca_binaria.md)
 8. [Manipulação de bits](Python/bits.md)
 9. [Filas](Python/filas.md)
+10. [Filas de prioridade](Python/filas_prioridade.md)
