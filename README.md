@@ -33,6 +33,7 @@ Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://ww
 
 ## ⚙️ Conteúdo
 
+0. [Complexidade](Python/complexidade.md)
 1. [Fast I/O](Python/fast_io.md)
 2. [Conjuntos](Python/conjuntos.md)
 3. [Crivo de Erástotenes](Python/crivo.md)
