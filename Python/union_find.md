@@ -10,15 +10,20 @@ Olhar se dois elementos estão na mesma família é muito simples, basta verific
 
 Suponha que o pai de cada elemento (identificado por um número de 1 a n) está salvo no vetor dicionário pai, onde pai[i] guarda o número do elemento que é o pai do elemento i.
 
-Desse modo, para encontrar o patriarca de i, basta olharmos seus ancestrais um a um até encontrarmos um patriarca (alguém que é pai de si mesmo).
+Desse modo, para encontrar o patriarca de i, basta olharmos seus ancestrais um a um até encontrarmos um patriarca (alguém que é pai de si 
+mesmo).
 
-![Figura 1](../assets/union1.gif)
+<p align='center'>
+<img src='../assets/union1.png' width=400>
+</p>
 
 Note que na figura acima há 5 elementos identificados por números de 1 a 5. Eles estão divididos em duas famílias, cujos patriarcas são 1 e 4.
 
 E para juntar dois elementos? Toda vez que dizemos que dois elementos quaisquer estão na mesma família, devemos fazer a união de todos os elementos das duas famílias em um conjunto só, ou seja: devemos associar o mesmo patriarca a todos eles. Para isso, basta que façamos o patriarca de uma família ser o pai do patriarca da outra, assim todos os descendentes do ex-patriarca agora serão descendentes do novo patriarca de todo o conjunto!
 
-![Figura 2](../assets/union2.gif)
+<p align='center'>
+<img src='../assets/union2.png' width=400>
+</p>
 
 ## 🔗 Implementação
 
