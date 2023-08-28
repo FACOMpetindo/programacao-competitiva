@@ -70,11 +70,18 @@ O algoritmo termina quando não há mais vértices adjacentes a `s` que não for
 
 ```py
 def dfs(s):
+    stack = collections.deque([s])
+    visitado = [False] * n
     visitado[s] = True
 
-    for v in adj[s]:
-        if not visitado[v]:
-            dfs(v)
+    while stack:
+        vertice = stack.pop()
+        print(vertice, end=' ')
+        print(stack)
+        for vizinho in graph[vertice]:
+            if vizinho not in visitado:
+                stack.append(vizinho)
+                visitado[vertice] = True
 ```
 
 ## Exercícios

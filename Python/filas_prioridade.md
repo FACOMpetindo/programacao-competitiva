@@ -57,7 +57,7 @@ Em cada comando de batalha, imprima na tela o pokemon selecionado para a batalha
 ```py
 import heapq
 
-fila = []
+fila = heapq.heapify([])
 
 while (op := input()):
     if op == 'C':
