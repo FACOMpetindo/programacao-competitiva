@@ -13,3 +13,4 @@
 10. [Filas de prioridade](filas_prioridade.md)
 11. [Grafos](grafos.md)
 12. [Union-Find](union_find.md)
+13. [Menor caminho parte 1](menor_caminho_1.md)
