@@ -6,7 +6,7 @@ Conjuntos são não ordenados, ou seja, não é possível acessar o elemento de 
 
 Também não é possível alterar o valor de um elemento de um conjunto, porém é possível adicionar e remover elementos de um conjunto.
 
-## Criando um conjunto
+## 🔨 Criando um conjunto
 
 Podemos criar um conjunto de duas maneiras diferentes:
 
@@ -19,7 +19,7 @@ A diferença entre os dois métodos é que o primeiro é mais rápido, porém o 
 
 Em programação competitiva, acabamos usando quase que exclusivamente a segunda maneira, pois é muito comum que precisemos criar um conjunto a partir de uma lista.
 
-## Manipulando seus elementos
+## 🗃️ Manipulando seus elementos
 
 Se você quer adicionar um único elemento ao conjunto, você pode usar o método `add`:
 
@@ -73,7 +73,7 @@ if 3 in conjunto:
 
 Essa é uma das grandes vantagens do conjunto em relação a lista, a verificação de pertencimento é muito mais rápida em um conjunto do que em uma lista, pois em um conjunto essa verificação é feita em tempo constante, enquanto em uma lista essa verificação é feita em tempo linear.
 
-## Operações com conjuntos
+## ⚙️ Operações com conjuntos
 
 Assim como podemos fazer operações com números, como soma, subtração, multiplicação, etc, podemos fazer operações com conjuntos, como união, interseção, diferença, etc.
 
