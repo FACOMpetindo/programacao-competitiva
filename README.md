@@ -6,8 +6,6 @@ Este respositório contém uma série de artigos que visam auxiliar no treinamen
 
 Cada artigo contém uma explicação geral sobre um determinado assunto, com exemplos e exercícios para fixação e treinamento.
 
-Inicialmente os códigos serão puramente em python, pois é a linguagem ensinada aos calouros dos cursos de computação da UFMS.
-
 Ao final de cada artigo, haverá uma lista de exercícios para treinamento, com links para os exercícios no Beecrowd.
 
 Caso você queira ver a solução de algum exercício, você pode acessar o [repositório de soluções](https://github.com/falcao-g/beecrowd)
@@ -18,15 +16,15 @@ Caso queira contribuir, abra o arquivo das [orientações de contribuição](CON
 
 ## 📚 Pré-requisitos
 
-O intuito desse repositório não é ensinar Python, mas sim algoritmos e estruturas de dados.
+O intuito desse repositório não é ensinar as linguagens, mas sim algoritmos e estruturas de dados.
 
-Este repositório assume que você já sabe o básico de Python, como:
+Este repositório assume que você já sabe o básico dessas linguagens, como:
 
 - Variáveis
 - Tipos de dados
 - Estruturas de controle
 - Estruturas de repetição
-- Listas, tuplas e dicionários
+- Vetores e listas
 - Funções
 
 Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ) do Gustavo Guanabara.
