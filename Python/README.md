@@ -1,0 +1,15 @@
+# ⚙️ Conteúdo
+
+0. [Complexidade](complexidade.md)
+1. [Fast I/O](fast_io.md)
+2. [Conjuntos](conjuntos.md)
+3. [Crivo de Erástotenes](crivo.md)
+4. [Algoritmo de Euclides](euclides.md)
+5. [Algoritmo guloso](guloso.md)
+6. [Soma Máxima em um Intervalo](soma_max_intervalo.md)
+7. [Busca Binária](busca_binaria.md)
+8. [Manipulação de bits](bits.md)
+9. [Filas](filas.md)
+10. [Filas de prioridade](filas_prioridade.md)
+11. [Grafos](grafos.md)
+12. [Union-Find](union_find.md)

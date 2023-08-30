@@ -31,18 +31,11 @@ Este repositório assume que você já sabe o básico de Python, como:
 
 Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ) do Gustavo Guanabara.
 
-## ⚙️ Conteúdo
+## 💻 Linguagens
 
-0. [Complexidade](Python/complexidade.md)
-1. [Fast I/O](Python/fast_io.md)
-2. [Conjuntos](Python/conjuntos.md)
-3. [Crivo de Erástotenes](Python/crivo.md)
-4. [Algoritmo de Euclides](Python/euclides.md)
-5. [Algoritmo guloso](Python/guloso.md)
-6. [Soma Máxima em um Intervalo](Python/soma_max_intervalo.md)
-7. [Busca Binária](Python/busca_binaria.md)
-8. [Manipulação de bits](Python/bits.md)
-9. [Filas](Python/filas.md)
-10. [Filas de prioridade](Python/filas_prioridade.md)
-11. [Grafos](Python/grafos.md)
-12. [Union-Find](Python/union_find.md)
+Os artigos estão em Python e C++.
+
+O conteúdo na maior parte é idẽntico, o que muda é a sintaxe, porém alguns artigos precisam ser escritos em uma linguagem e não na outra.
+
+- [C++](C++/README.md)
+- [Python](Python/README.md)
