@@ -4,3 +4,5 @@
 1. [Conjuntos](conjuntos.md)
 2. [Crivo de Erástotenes](crivo.md)
 3. [Algoritmo de Euclides](euclides.md)
+4. [Algoritmo guloso](guloso.md)
+5. [Soma Máxima em um Intervalo](soma_max_intervalo.md)
