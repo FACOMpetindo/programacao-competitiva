@@ -1,7 +1,5 @@
 # Busca binária
 
-## 🤔 O que é?
-
 A busca binária é um algoritmo de busca que utiliza a técnica de divisão e conquista. Ela é utilizada para buscar um elemento em um vetor ordenado.
 
 A busca binária é um algoritmo de complexidade O(log n), ou seja, ele é muito mais rápido que uma busca linear, que tem complexidade O(n).
@@ -64,6 +62,6 @@ print(busca_binaria(vetor, elemento))
 # 1 (índice do elemento)
 ```
 
-## 🤔 Por que funciona?
+## 🤔 Observações
 
 É importante notar que a busca binária só funciona pois o vetor está ordenado. Caso o vetor não esteja ordenado, o algoritmo não funciona.

@@ -1,7 +1,5 @@
 # Filas de prioridade
 
-## 📚 Introdução
-
 Uma fila de prioridade em Python é implementada usando a biblioteca padrão heapq.
 
 A propriedade dessa estrutura em Python é que cada elemento da fila tem uma prioridade associada a ele e o elemento com a maior prioridade é sempre removido primeiro.

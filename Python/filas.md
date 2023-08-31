@@ -1,7 +1,5 @@
 # Filas
 
-## 📚 Introdução
-
 Uma fila é uma estrutura de dados que segue o princípio FIFO (First In, First Out), ou seja, o primeiro elemento a entrar é o primeiro a sair.
 
 Filas são muito utilizadas em programação competitiva, pois são uma forma simples de organizar uma lista de elementos que precisam ser processados e mais rápidas que uma lista com o mesmo propósito.
@@ -40,7 +38,7 @@ print(queue)
 
 ### 📋 Implementação usando deque
 
-Filas em Python podem ser implementadas usando a classe deque da biblioteca padrão collections. 
+Filas em Python podem ser implementadas usando a classe deque da biblioteca padrão collections.
 
 É mais interessante usar deque sobre listas, pois deque fornece uma complexidade de tempo O(1) para operações de anexação e pop em comparação com a lista que fornece O(n) complexidade de tempo.
 

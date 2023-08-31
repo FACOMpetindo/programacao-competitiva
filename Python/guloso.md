@@ -1,7 +1,5 @@
 # Algoritmo guloso
 
-## 🤔 O que é?
-
 É uma estratégia para resolver desafios de programação muito útil, a ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação.
 
 Algoritmos gulosos são muito úteis para resolver problemas de otimização, onde queremos maximizar ou minimizar alguma coisa.

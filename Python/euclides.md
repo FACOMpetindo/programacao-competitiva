@@ -2,7 +2,7 @@
 
 O algoritmo de Euclides é um algoritmo que é usado para calcular o máximo divisor comum, assim como o mínimo múltiplo comum entre dois números inteiros.
 
-## Máximo divisor comum
+## 📈 Máximo divisor comum
 
 O máximo divisor comum entre dois números inteiros é o maior número inteiro que divide ambos os números.
 
@@ -39,9 +39,9 @@ def euclides(a, b):
     if b == 0:
         return a
     return euclides(b, a % b)
-``` 
+```
 
-## Mínimo múltiplo comum
+## 📉 Mínimo múltiplo comum
 
 O algoritmo de Euclides também pode ser usado para calcular o mínimo múltiplo comum entre dois números inteiros.
 
