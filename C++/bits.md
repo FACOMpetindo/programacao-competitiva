@@ -74,46 +74,62 @@ Para checar se um bit é 1, podemos usar o operador `&` com uma máscara que ten
 
 Por exemplo, para checar se o terceiro bit de 5 é 1, podemos fazer:
 
-```py
-5 & (1 << 2) != 0
+```cpp
+bool is_set(int x, int i){
+  bool ret = ((x&(1 << i)) != 0);
+  return ret;
+}
 ```
 
 ## Retornar o bit menos significativo
 
-Basta retornar o valor `and` 1, pois 1 só tem o bit menos significativo como 1:
+O negativo de um número é só trocar os bits do número e somar 1 a isso, dessa forma os `lsb` dos dois números são iguais, porém todos os bits maiores que o `lsb` deles serão diferentes,assim, basta retornamos o `and` dos bits entre o número e o negativo desse número.
 
-```py
-5 & 1
+```cpp
+int lsb(int x){
+  return x&-x;
+}
 ```
 
 ## Contar o número de bits 1
 
-Em python podemos usar a função `bin` para converter um número para binário, e depois podemos usar a função `count` para contar o número de bits 1:
+Podemos usar a ideia do `lsb` para fazer esse cálculo mais rapidamente, usamos um loop, e enquanto o número for diferente de 0, subtraimos o `lsb` do número e adicionamos um a um contador, quando o loop termina retornamos o contador
 
-```py
-bin(5).count('1')
-```
-
-Ou, se seu python está na versão 3.10 ou maior, você pode usar:
-
-```py
-int.bit_count(5)
+```cpp
+int count_bits(int x){
+  int ret = 0;
+  while(x != 0){
+    ++ret;
+    x -= x&-x;
+  }
+  return ret;
+}
 ```
 
 ## Checar se um número é potência de 2
 
 Se o númerno não for 0, vemos se ele tem algum bit em comum com seu antecessor, pois se ele for uma potência de 2, digamos 2**i, o único bit ligado será o i, enquanto seu antecessor tem todos os bits menores que i iguais a 1, assim o and deles será 0.
 
-```py
-n & (n - 1) == 0
+```cpp
+bool is_power_of_two(int x){
+  if(x == 0)  return 0;
+  return ((x&(x - 1)) == 0);
+}
 ```
 
 ## Bits necessários para representar um número
 
-Podemos ver quantos bits são necessários para representar um número da seguinte forma:
+Podemos checar quantos bits são necessários para representar um número usando o operador `>>` e um loop, enquanto o número for diferente de 0, deslocamos ele para a direita e adicionamos 1 a um contador, quando o loop termina retornamos o contador.
 
-```py
-int.bit_length(5)
+```cpp
+int number_of_bits(int number) {
+  int count = 0;
+  while (number > 0) {
+    number >>= 1;
+    count++;
+  }
+  return count;
+}
 ```
 
 ## Ligar um bit
@@ -122,8 +138,9 @@ Para ligar um bit, basta usar o operador `|` com uma máscara que tenha apenas o
 
 Por exemplo, para ligar o terceiro bit de 5 como 1, podemos fazer:
 
-```py
-5 |= (1 << 2)
+```cpp
+int x = 5;
+x |= (1 << 2);
 ```
 
 ## Desligar um bit
@@ -132,9 +149,10 @@ Primeiro garantimos que o bit está ligado, depois ele recebe ele mesmo `xor` a 
 
 Por exemplo, para desligar o terceiro bit de 5, podemos fazer:
 
-```py
-5 |= (1 << 2)
-5 ^= (1 << 2)
+```cpp
+int x = 5;
+x |= (1 << 2)
+x ^= (1 << 2)
 ```
 
 ## Exercícios
