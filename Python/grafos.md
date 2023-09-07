@@ -69,6 +69,8 @@ O algoritmo funciona da seguinte forma:
 O algoritmo termina quando não há mais vértices adjacentes a `s` que não foram visitados ainda.
 
 ```py
+import collections
+
 def dfs(s):
     stack = collections.deque([s])
     visitado = [False] * n
@@ -76,13 +78,19 @@ def dfs(s):
 
     while stack:
         vertice = stack.pop()
-        print(vertice, end=' ')
-        print(stack)
         for vizinho in graph[vertice]:
             if vizinho not in visitado:
                 stack.append(vizinho)
                 visitado[vertice] = True
 ```
+
+### ⚔️ DFS vs BFS
+
+Podemos ver a diferença entre os dois algoritmos no gif abaixo:
+
+<img src="../assets/dfs-bfs.gif">
+
+Como podemos ver a DFS, explora o máximo possível de um caminho antes de voltar, enquanto a BFS explora em "camadas".
 
 ## Exercícios
 
