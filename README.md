@@ -2,7 +2,11 @@
 
 ## 🤵 Introdução
 
-Este respositório contém uma série de artigos que visam auxiliar no treinamento para a Olimpíada Brasileira de Informática (OBI).
+Programação Competitiva é uma área da computação que visa resolver problemas de forma eficiente, para isso, é necessário conhecer algoritmos e estruturas de dados que auxiliam na resolução desses problemas.
+
+No Brasil temos algumas competições de programação, como a Olimpíada Brasileira de Informática (OBI), que é uma competição de programação para alunos do ensino fundamental, médio e técnico e a Maratona de Programação da SBC, que é uma competição de programação para alunos do ensino superior.
+
+Este respositório contém uma série de artigos em Python e C++ que visam auxiliar no treinamento para essas competições.
 
 Cada artigo contém uma explicação geral sobre um determinado assunto, com exemplos e exercícios para fixação e treinamento.
 
@@ -16,22 +20,21 @@ Caso queira contribuir, abra o arquivo das [orientações de contribuição](CON
 
 ## 📚 Pré-requisitos
 
-O intuito desse repositório não é ensinar as linguagens, mas sim algoritmos e estruturas de dados.
+O intuito desse repositório não é ensinar as linguagens abordadas, mas sim como utilizá-las no contexto de programação competitiva.
 
-Este repositório assume que você já sabe o básico dessas linguagens, como:
+Não é necessário saber ambas Python e C++, os artigos são independentes, então você pode escolher a linguagem que preferir.
+
+Levando em conta a linguagem escolhida, esse repositório assume que você já sabe conceitos como:
 
 - Variáveis
 - Tipos de dados
 - Estruturas de controle
 - Estruturas de repetição
 - Vetores e listas
+- Matrizes e dicionários
 - Funções
 
-Caso queira aprender esses assuntos, recomendamos o [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ) do Gustavo Guanabara.
-
 ## 💻 Linguagens
-
-Os artigos estão em Python e C++.
 
 O conteúdo na maior parte é idẽntico, o que muda é a sintaxe, porém alguns artigos precisam ser escritos em uma linguagem e não na outra.
 
