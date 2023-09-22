@@ -1,5 +1,7 @@
 # Complexidade de Algoritmos
 
+## 📚 Introdução
+
 Antes de começarmos a estudar algoritmos, precisamos entender complexidade de tempo e de espaço.
 
 ## ⏲️ Complexidade de tempo
@@ -20,6 +22,8 @@ int soma(int n) {
 
 Esse algoritmo recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`.
 
+Por exemplo, se `n = 5`, o algoritmo retorna `0 + 1 + 2 + 3 + 4 = 10`.
+
 A complexidade de tempo desse algoritmo é `O(n)`, pois ele executa `n` operações, uma para cada número de `0` até `n - 1`.
 
 Chamamos essa notação de **Big O**, ela representa o pior caso de um algoritmo, ou seja, a quantidade máxima de operações que um algoritmo pode executar.
@@ -38,9 +42,13 @@ int soma(int n) {
 }
 ```
 
-Esse algoritmo também recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`.
+Esse algoritmo também recebe um número `n` porém adicionamos um laço de repetição a mais.
 
-A complexidade de tempo desse algoritmo é `O(n^2)`, pois ele executa `n * n` operações, uma para cada par de números de `0` até `n - 1`.
+Por exemplo, se `n = 3` o algoritmo retorna `(0 + 0) + (0 + 1) + (0 + 2) + (1 + 0) + (1 + 1) + (1 + 2) + (2 + 0) + (2 + 1) + (2 + 2) = 18`.
+
+Podemos perceber então que a complexidade desse algoritmo é bem maior do que a do algoritmo anterior, isso se dá pois cada número de `0` até `n - 1` é somado com cada número de `0` até `n - 1`, isso nos dá `n * n` operações.
+
+A complexidade de tempo desse algoritmo é `O(n^2)`.
 
 ## 📈 Complexidade de tempo de alguns algoritmos
 
@@ -58,7 +66,7 @@ Vejamos as complexidades mais comuns de algoritmos:
 
 <img alt="Complexity time graph" src="https://www.raebear.net/media/2017/12/jIGhf.png" />
 
-Ao longo desse repositório, vamos estudar algoritmos que possuem complexidades de tempo diferentes.
+Ao longo da nossa jornada, vamos estudar algoritmos que possuem complexidades de tempo diferentes.
 
 ## 📈 Complexidade de espaço
 
@@ -77,7 +85,7 @@ int soma(int n) {
 }
 ```
 
-Esse algoritmo recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`.
+Esse algoritmo recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`, usando um vetor para armazenar os números.
 
 A complexidade de espaço desse algoritmo é `O(n)`, pois ele ocupa `n` posições na memória, uma para cada número de `0` até `n - 1`.
 
@@ -96,8 +104,8 @@ int soma(int n) {
 }
 ```
 
-Esse algoritmo também recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`.
+Esse algoritmo também recebe um número `n` e retorna a soma de todos os números de `0` até `n - 1`, porém usamos uma matriz para armazenar os números.
 
-No entanto a complexidade de espaço desse algoritmo é `O(n^2)`, pois ele ocupa `n * n` posições na memória, uma para cada par de números de `0` até `n - 1`.
+Isso nos dá uma complexidade de espaço de `O(n^2)`, pois ele ocupa `n * n` posições na memória, cada número de `0` até `n - 1` é armazenado `n - 1` vezes.
 
-No geral a complexidade de espaço é negligenciada, pois a memória disponível é muito maior do que a quantidade de memória que um algoritmo ocupa, porém, conhecimento nunca é demais.
+No geral, a complexidade de espaço de um algoritmo é bem menos importante do que a complexidade de tempo, nas competições e na maioria dos casos, não precisamos nos preocupar com ela, pois temos memória muito maior do que o necessário.

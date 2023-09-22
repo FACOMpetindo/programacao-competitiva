@@ -1,10 +1,10 @@
 # Algoritmo de Dijkstra
 
+## 📚 Introdução
+
 O algoritmo de Dijkstra é um algoritmo guloso que encontra o menor caminho entre dois vértices em um grafo com arestas de peso não negativo.
 
 Ele recebe um vértice principal S para ser a fonte do grafo e retorna o menor caminho de todos os vértices do grafo para S.
-
-## 🔍 Passo a passo do algoritmo
 
 A ideia do algoritmo consiste em:
 
@@ -98,15 +98,19 @@ Imagine o seguinte problema:
 
 Queremos então achar o menor caminho da cidade de onde Succa está para a cidade onde o Noic está.
 
-Agora vamos analisar como implementar as duas partes principais do algoritmo: como encontrar o vértice mais próximo (vamos chamar de u) e como atualizar os valores para os vizinhos de u.
+## 🤓 Implementação
 
-Podemos manter todas as distâncias em uma fila de prioridade (priority queue, heap), dessa maneira esse passo custa O(logN).
+Vamos ver como implmentar o algoritmo de Dijkstra para resolver o problema do Succa.
+
+É necessário pensar na lógica das duas partes principais do algoritmo: como encontrar o vértice mais próximo (vamos chamar de u) e como atualizar os valores para os vizinhos de u.
+
+Podemos manter todas as distâncias em uma fila de prioridade (priority queue, heap), dessa maneira esse passo custa `O(logN)`.
 
 Para o segundo passo, simplesmente percorremos por todos os vizinhos do vértice u e atualizamos as distâncias se necessário.
 
 Vamos supor neste problema que o número de cidades é N ≤ 10.000 e que uma viagem não passa de 1000 minutos.
 
-Vamos ver como fica a implementação:
+O código, então, fica assim:
 
 ```py
 import heapq
@@ -166,3 +170,5 @@ for _ in range(m):
 Dijkstra(cidade_succa)
 print(distancia[cidade_noic])
 ```
+
+A complexidade do algoritmo é `O(MlogN)`, onde M é o número de arestas e N é o número de vértices.

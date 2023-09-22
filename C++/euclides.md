@@ -1,5 +1,7 @@
 # Algoritmo de Euclides
 
+## 📚 Introdução
+
 O algoritmo de Euclides é um algoritmo que é usado para calcular o máximo divisor comum, assim como o mínimo múltiplo comum entre dois números inteiros.
 
 ## Máximo divisor comum
@@ -35,7 +37,7 @@ Por exemplo, para calcular o mdc entre 12 e 18 usando esse algoritmo, o passo a 
 - mdc(18, 12) = mdc(12, 18 % 12) = mdc(12, 6)
 - mdc(6, 12 % 6) = mdc(6, 0) = 6
 
-O código em Python fica:
+O código fica da seguinte forma:
 
 ```cpp
 int euclides(int a, int b) {
@@ -50,7 +52,7 @@ int euclides(int a, int b) {
 
 O algoritmo de Euclides também pode ser usado para calcular o mínimo múltiplo comum entre dois números inteiros.
 
-O mínimo múltiplo comum entre dois números inteiros é o menor número inteiro que é múltiplo de ambos os números.
+O mínimo MMC de dois números inteiros é o menor número inteiro que é múltiplo de ambos os números.
 
 Por exemplo, o mínimo múltiplo comum entre 12 e 18 é 36, pois 36 é o menor número que é múltiplo de 12 e 18.
 
@@ -60,7 +62,7 @@ Podemos usar a seguinte propriedade para calcular o mínimo múltiplo comum entr
 
 Ou seja, o mínimo múltiplo comum entre dois números inteiros é igual ao produto entre os dois números dividido pelo máximo divisor comum entre eles.
 
-O código em Python fica:
+O código fica da seguinte forma:
 
 ```cpp
 int mmc(int a, int b) {

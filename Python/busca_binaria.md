@@ -1,10 +1,10 @@
 # Busca binária
 
-A busca binária é um algoritmo de busca que utiliza a técnica de divisão e conquista. Ela é utilizada para buscar um elemento em um vetor ordenado.
+## 📚 Introdução
+
+A busca binária é um algoritmo de busca que utiliza a técnica de divisão e conquista, ela é utilizada para buscar um elemento em um vetor ordenado.
 
 A busca binária é um algoritmo de complexidade O(log n), ou seja, ele é muito mais rápido que uma busca linear, que tem complexidade O(n).
-
-## 🤷 Como funciona?
 
 Digamos que você tenha um vetor de números inteiros ordenados, e queira buscar o número 7.
 

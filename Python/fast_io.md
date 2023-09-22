@@ -1,5 +1,7 @@
 # Inputs e outputs rápidos
 
+## 📚 Introdução
+
 Geralmente usaremos os métodos padrões de input e output do Python, porém, as vezes os exercícios requerem que façamos centenas ou mais de leituras e escritas, nesses casos, os métodos padrões custam muito tempo, então temos que usar métodos mais rápidos.
 
 ## 📥 Inputs
@@ -41,7 +43,7 @@ Temos que manter algumas coisas em mente ao usar o `sys.stdin.readline()`:
 
 - Ele lê uma linha inteira, então se quisermos ler mais de um valor na mesma linha, temos que usar o `split()`.
 - Ele lê uma string, então se quisermos ler um inteiro, temos que usar o `int()`.
-- Ele lê o `\n` no final da linha, então se quisermos ler uma única linha, temos que usar o `.rstrip()`.
+- Ele lê o `\n` no final da linha, isso normalmente não afeta em nada, pois o `split()` e `int()` já o removem, porém se quisermos ler uma única string a cada linha, temos que usar o `.rstrip()`.
 
 ## 📤 Outputs
 
@@ -58,9 +60,9 @@ sys.stdout.write(str(a) + '\n')
 Assim como no `sys.stdin.readline()`, temos que manter algumas coisas em mente ao usar o `sys.stdout.write()`:
 
 - Ele só aceita strings, então se quisermos escrever um inteiro, temos que usar o `str()` ou f-strings.
-- Ele não coloca o `\n` automaticamente no final da linha, isso é importante pois os juízes de código não aceitaram a resposta se não tiver o `\n` no final da linha.
+- Ele não coloca o `\n` automaticamente no final da linha, isso é importante pois os juízes de código não aceitam a resposta se não tiver o `\n` no final da linha.
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 Nenhum exercício listado aqui precisam de fast io, porém, eles são bons para treinar o uso do `sys.stdin.readline()` e do `sys.stdout.write()`, assim quando você encontrar um onde o tempo é um problema, usar esses métodos é um bom truque a se aplicar.
 

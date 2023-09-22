@@ -1,5 +1,7 @@
 # Algoritmo de Euclides
 
+## 📚 Introdução
+
 O algoritmo de Euclides é um algoritmo que é usado para calcular o máximo divisor comum, assim como o mínimo múltiplo comum entre dois números inteiros.
 
 ## 📈 Máximo divisor comum
@@ -45,7 +47,7 @@ def euclides(a, b):
 
 O algoritmo de Euclides também pode ser usado para calcular o mínimo múltiplo comum entre dois números inteiros.
 
-O mínimo múltiplo comum entre dois números inteiros é o menor número inteiro que é múltiplo de ambos os números.
+O MMC de dois números inteiros é o menor número inteiro que é múltiplo de ambos os números.
 
 Por exemplo, o mínimo múltiplo comum entre 12 e 18 é 36, pois 36 é o menor número que é múltiplo de 12 e 18.
 

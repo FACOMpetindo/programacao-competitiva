@@ -1,5 +1,7 @@
 # Algoritmo guloso
 
+## 📚 Introdução
+
 É uma estratégia para resolver desafios de programação muito útil, a ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação.
 
 Algoritmos gulosos são muito úteis para resolver problemas de otimização, onde queremos maximizar ou minimizar alguma coisa.
@@ -19,7 +21,7 @@ Uma solução possível seria:
 1. Ordenar a lista de fornecedores pelo preço do litro
 2. Comprar do fornecedor mais barato até que sua demanda seja satisfeita
 
-Felizmente essa solução funciona e é eficiente, mas por que?
+Felizmente essa solução funciona e é eficiente! Mas por que?
 
 A resposta é simples, se você comprar do fornecedor mais barato, você vai gastar menos dinheiro, e se você comprar até que sua demanda seja satisfeita, você não vai gastar dinheiro a mais.
 
@@ -28,7 +30,7 @@ Este programa resume muito bem a ideia de um algoritmo guloso
 Nesse caso, tenho que escolher de quais fornecedores comprar, então ordeno as opções pelo preço, pois o melhor fornecedor
 é o mais barato, e vou comprando sempre do melhor até atingir a demanda necessária.
 
-O código abaixo mostra uma implementação desse algoritmo em python:
+O código abaixo mostra uma implementação desse algoritmo em C++:
 
 ```cpp
 #include <iostream>
@@ -70,13 +72,13 @@ int main() {
 
     // se todo o seu estoque não consegue preencher o que ainda preciso
     if (davez.estoq < d){
-      custo+=davez.estoq*davez.preco; // somo a custo o valor de comprar todo o estoque
+      custo+=davez.estoq*davez.preco; // somo à custo o valor de comprar todo o estoque
       d-=davez.estoq; // e subtraio de d o litros que comprei
     }
     // caso contrário, ou seja, dá pra encher tudo só com esse fornecedor
     else {
-      custo+=d*davez.preco; // somo  acusto o valor de comprar o que preciso
-      d=0; // zero a quantidade que a inda falta comprar
+      custo+=d*davez.preco; // somo à custo o valor de comprar o que preciso
+      d=0; // zero a quantidade que ainda falta comprar
       break; // e paro de percorrer o vetor, pois já comprei o que precisava
     }
   }

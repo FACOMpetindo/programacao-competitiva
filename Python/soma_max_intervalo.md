@@ -1,6 +1,8 @@
 # Soma Máxima em um Intervalo
 
-Um exemplo de exercício que aparece com frequência em competições de programação é o problema da soma máxima em um intervalo. O problema consiste em dado um vetor de números inteiros, encontrar a soma máxima de um intervalo desse vetor.
+## 📚 Introdução
+
+Um exemplo de exercício que aparece em competições de programação é o problema da soma máxima em um intervalo. O problema consiste em dado um vetor de números inteiros, encontrar a soma máxima de um intervalo desse vetor.
 
 Por exemplo, dado o vetor `[1, 2, -3, 4, 5]`, a soma máxima de um intervalo desse vetor é `9`, que é a soma do intervalo `[4, 5]`.
 
@@ -26,14 +28,12 @@ def maior_soma(vet):
     return resp
 ```
 
-## 🤔 Como funciona?
-
 A variável `maior` guarda a maior soma possível até o elemento atual, e a variável `resp` guarda a maior soma encontrada até o momento.
 
 A cada iteração, a variável `maior` é atualizada, e a variável `resp` é atualizada caso a variável `maior` seja maior que ela.
 
 O algoritmo tem complexidade `O(n)`, pois percorre o vetor uma única vez.
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [2463](https://www.beecrowd.com.br/judge/pt/problems/view/2463) do Beecrowd, que caiu na OBI 2014, esse é um exercício bem simples, que pode ser resolvido com o algoritmo acima.

@@ -68,14 +68,14 @@ O operador `>>` é o operador de deslocamento à direita. Ele desloca todos os b
 | 4 >> 1   | 2         |
 | 5 >> 2   | 1         |
 
-## Checar se um dado bit está ligado
+## Checar se um bit está ligado
 
 Para checar se um bit é 1, podemos usar o operador `&` com uma máscara que tenha apenas o bit que queremos checar como 1.
 
 Por exemplo, para checar se o terceiro bit de 5 é 1, podemos fazer:
 
 ```py
-5 & (1 << 2) != 0
+5 & (1 << 2) != 0 # true (5 = 101 em binário)
 ```
 
 ## Retornar o bit menos significativo
@@ -83,7 +83,7 @@ Por exemplo, para checar se o terceiro bit de 5 é 1, podemos fazer:
 Basta retornar o valor `and` 1, pois 1 só tem o bit menos significativo como 1:
 
 ```py
-5 & 1
+5 & 1 # 1
 ```
 
 ## Contar o número de bits 1
@@ -91,13 +91,13 @@ Basta retornar o valor `and` 1, pois 1 só tem o bit menos significativo como 1:
 Em python podemos usar a função `bin` para converter um número para binário, e depois podemos usar a função `count` para contar o número de bits 1:
 
 ```py
-bin(5).count('1')
+bin(5).count('1') # 2
 ```
 
 Ou, se seu python está na versão 3.10 ou maior, você pode usar:
 
 ```py
-int.bit_count(5)
+int.bit_count(5) # 2
 ```
 
 ## Checar se um número é potência de 2
@@ -105,7 +105,8 @@ int.bit_count(5)
 Se o númerno não for 0, vemos se ele tem algum bit em comum com seu antecessor, pois se ele for uma potência de 2, digamos 2**i, o único bit ligado será o i, enquanto seu antecessor tem todos os bits menores que i iguais a 1, assim o and deles será 0.
 
 ```py
-n & (n - 1) == 0
+x = 5
+x & (x - 1) == 0 # false
 ```
 
 ## Bits necessários para representar um número
@@ -113,17 +114,18 @@ n & (n - 1) == 0
 Podemos ver quantos bits são necessários para representar um número da seguinte forma:
 
 ```py
-int.bit_length(5)
+int.bit_length(5) # 3
 ```
 
 ## Ligar um bit
 
 Para ligar um bit, basta usar o operador `|` com uma máscara que tenha apenas o bit que queremos ligar como 1.
 
-Por exemplo, para ligar o terceiro bit de 5 como 1, podemos fazer:
+Por exemplo, para ligar o segundo bit de 5 como 1, podemos fazer:
 
 ```py
-5 |= (1 << 2)
+x = 5 # 101 em binário
+x |= (1 << 1) # 7 (111 em binário)
 ```
 
 ## Desligar um bit
@@ -133,11 +135,13 @@ Primeiro garantimos que o bit está ligado, depois ele recebe ele mesmo `xor` a 
 Por exemplo, para desligar o terceiro bit de 5, podemos fazer:
 
 ```py
-5 |= (1 << 2)
-5 ^= (1 << 2)
+x = 5 # 101 em binário
+
+x |= (1 << 2)
+x ^= (1 << 2) # 1 (001 em binário)
 ```
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, esse exercício pode ser resolvido de várias maneiras, mas saber manipular bits te faz ter menos dor de cabeça.
 

@@ -1,5 +1,7 @@
 # Conjuntos
 
+## 📚 Introdução
+
 Conjuntos são uma ferramenta muito útil em programação competitiva, a ideia básica de um conjunto é uma lista que não contém elementos repetidos, ou seja, se você tentar adicionar um elemento que já está no conjunto, ele não será adicionado.
 
 Conjuntos são não ordenados, ou seja, não é possível acessar o elemento de um conjunto pelo seu índice, porém é possível iterar sobre os elementos de um conjunto e verificar se um valor está presente em um conjunto.
@@ -105,7 +107,7 @@ print(conjunto1.difference(conjunto2)) # {1, 2, 3}
 
 Existem muitos outros métodos úteis para conjuntos, como `issubset`, `issuperset`, `symmetric_difference`, etc, um bom local para conferir todos os métodos é a [W3Schools](https://www.w3schools.com/python/python_sets_methods.asp).
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [1581](https://www.beecrowd.com.br/judge/pt/problems/view/1581) do Beecrowd, esse é um exercício que é resolvido facilmente com conjuntos.
 

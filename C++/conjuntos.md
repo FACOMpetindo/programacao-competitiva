@@ -1,5 +1,7 @@
 # Conjuntos
 
+## 📚 Introdução
+
 Conjuntos são uma ferramenta muito útil em programação competitiva, a ideia básica de um conjunto é uma lista que não contém elementos repetidos, ou seja, se você tentar adicionar um elemento que já está no conjunto, ele não será adicionado.
 
 Não é possível acessar o elemento de um conjunto pelo seu índice, porém é possível iterar sobre os elementos de um conjunto e verificar se um valor está presente em um conjunto.
@@ -8,15 +10,15 @@ Também não é possível alterar o valor de um elemento de um conjunto, porém 
 
 ## 🔨 Criando um conjunto
 
-Para adicionar a estrutura set ao nosso programa basta adicionar a biblioteca e criar uma variável do tipo set conforme o exemplo abaixo:
+Para criar um conjunto em C++ basta adicionar a biblioteca set e criar uma variável do tipo set conforme o exemplo abaixo:
 
 ```cpp
-#include <set> //Biblioteca do set
+#include <set>
 
 using namespace std;
 
 int main(){
-    set<int> S; //Cria uma variável do tipo set para armazenar números inteiros
+    set<int> S; //Cria um conjunto para armazenar números inteiros
 }
 ```
 
@@ -25,15 +27,15 @@ int main(){
 Para inserir um elemento em um conjunto, basta usar o método `insert`:
 
 ```cpp
-#include <set> //Biblioteca do set
+#include <set>
 
 using namespace std;
 
 int main(){
-    set<int> S; //Cria uma variável do tipo set para armazenar números inteiros
+    set<int> S; //Cria um conjunto para armazenar números inteiros
 
-    S.insert(10); //Adiciona o elemento 10 no set
-    S.insert(3); //Adiciona o elemento 3 no set
+    S.insert(10); //Adiciona o elemento 10
+    S.insert(3); //Adiciona o elemento 3
 }
 ```
 
@@ -41,18 +43,18 @@ int main(){
 
 ## 🔍 Buscando elementos
 
-Para realizar uma busca no set utilizamos o comando find, o find retorna um ponteiro que aponta para o elemento procurado caso o elemento esteja no set ou para o final do set, caso o elemento procurado não esteja no set. Complexidade: O(log⁡n).
+Para realizar uma busca no set utilizamos o comando `find`, ele retorna um ponteiro que aponta para o elemento procurado caso o elemento esteja no conjunto ou para o final dele, caso o elemento procurado não exista, sua complexidade também é O(log⁡n).
 
 ```cpp
-#include <set> //Biblioteca do set
+#include <set>
 
 using namespace std;
 
 int main(){
-    set<int> S; //Cria uma variável do tipo set para armazenar números inteiros
+    set<int> S; //Cria um conjunto para armazenar números inteiros
 
-    S.insert(10); //Adiciona o elemento 10 no set
-    S.insert(3); //Adiciona o elemento 3 no set
+    S.insert(10); //Adiciona o elemento 10
+    S.insert(3); //Adiciona o elemento 3
 
     if(S.find(3) != S.end()){ //Se 3 está no conjunto
       cout<<3<<"\n";
@@ -65,40 +67,42 @@ int main(){
 Para deletar um elemento de um conjunto, basta usar o método `erase`:
 
 ```cpp
-#include <set> //Biblioteca do set
+#include <set>
 
 using namespace std;
 
 int main(){
-    set<int> S; //Cria uma variável do tipo set para armazenar números inteiros
+    set<int> S; //Cria um conjutno
 
-    S.insert(10); //Adiciona o elemento 10 no set
-    S.insert(3); //Adiciona o elemento 3 no set
+    S.insert(10); //Adiciona o elemento 10
+    S.insert(3); //Adiciona o elemento 3
 
-    S.erase(10); //Apaga o elemento 10 do set
+    S.erase(10); //Apaga o elemento
 }
 ```
 
 Outros métodos que também devemos conhecer são os:
 
-- clear: Apaga todos os elementos.
-- size: Retorna a quantidade de elementos.
-- begin: Retorna um ponteiro para o inicio do set
-- end: Retorna um ponteiro para o final do set
+- `clear`: Apaga todos os elementos.
+- `size`: Retorna a quantidade de elementos.
+- `begin`: Retorna um ponteiro para o inicio do set
+- `end`: Retorna um ponteiro para o final do set
 
-Por fim, algumas vezes queremos passar por todos os elementos presentes no set e podemos fazer isso utilizando o código abaixo. É importante saber que quando passarmos pelos elementos, iremos acessar eles de forma ordenada. Logo, no exemplo abaixo o código imprime 3 7 10.
+Por fim, algumas vezes queremos passar por todos os elementos presentes no conjunto e podemos fazer isso utilizando o código abaixo.
+
+É importante saber que quando passarmos pelos elementos, iremos acessar eles de forma ordenada. Logo, no exemplo abaixo o código imprime `3 7 10`.
 
 ```cpp
-#include <set> //Biblioteca do set
+#include <set>
 
 using namespace std;
 
 int main(){
-    set<int> S; //Cria uma variável do tipo set para armazenar números inteiros
+    set<int> S; //Cria um conjunto para armazenar números inteiros
 
-    S.insert(7); //Adiciona o elemento 7 no set
-    S.insert(10); //Adiciona o elemento 10 no set
-    S.insert(3); //Adiciona o elemento 3 no set
+    S.insert(7); //Adiciona o elemento 7
+    S.insert(10); //Adiciona o elemento 10
+    S.insert(3); //Adiciona o elemento 3
 
     for (set<int>::iterator it=S.begin(); it!=S.end(); ++it){
       cout << *it << " ";
@@ -107,7 +111,7 @@ int main(){
 }
 ```
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [1581](https://www.beecrowd.com.br/judge/pt/problems/view/1581) do Beecrowd, esse é um exercício que é resolvido facilmente com conjuntos.
 
