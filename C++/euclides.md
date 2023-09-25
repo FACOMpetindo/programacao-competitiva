@@ -69,3 +69,7 @@ int mmc(int a, int b) {
     return a * b / euclides(a, b);
 }
 ```
+
+## 🧑‍🏫 Exercícios
+
+- Exercício [2443](https://www.beecrowd.com.br/judge/pt/problems/view/2443) do Beecrowd, que caiu na OBI 2013, esse é um exercício simples para demonstrar o uso do algoritmo de Euclides, com algo que fazemos desde o ensino fundamental, soma de frações!
