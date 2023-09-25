@@ -68,7 +68,7 @@ O operador `>>` é o operador de deslocamento à direita. Ele desloca todos os b
 | 4 >> 1   | 2         |
 | 5 >> 2   | 1         |
 
-## Checar se um dado bit está ligado
+## Checar se um bit está ligado
 
 Para checar se um bit é 1, podemos usar o operador `&` com uma máscara que tenha apenas o bit que queremos checar como 1.
 
@@ -76,19 +76,23 @@ Por exemplo, para checar se o terceiro bit de 5 é 1, podemos fazer:
 
 ```cpp
 bool is_set(int x, int i){
-  bool ret = ((x&(1 << i)) != 0);
+  bool ret = (x&(1 << i)) != 0;
   return ret;
 }
+
+is_set(5, 2); // true (5 = 101 em binário)
 ```
 
 ## Retornar o bit menos significativo
 
-O negativo de um número é só trocar os bits do número e somar 1 a isso, dessa forma os `lsb` dos dois números são iguais, porém todos os bits maiores que o `lsb` deles serão diferentes,assim, basta retornamos o `and` dos bits entre o número e o negativo desse número.
+Para calcular o negativo de um número basta inverter os bits e somar 1 a isso, dessa forma os `lsb` dos dois números são iguais, porém todos os bits maiores que o `lsb` deles serão diferentes, assim, basta retornamos o `and` dos bits entre o número e o negativo desse número.
 
 ```cpp
 int lsb(int x){
   return x&-x;
 }
+
+lsb(5); // 1
 ```
 
 ## Contar o número de bits 1
@@ -104,6 +108,8 @@ int count_bits(int x){
   }
   return ret;
 }
+
+count_bits(5); // 2
 ```
 
 ## Checar se um número é potência de 2
@@ -115,6 +121,8 @@ bool is_power_of_two(int x){
   if(x == 0)  return 0;
   return ((x&(x - 1)) == 0);
 }
+
+is_power_of_two(5); // false
 ```
 
 ## Bits necessários para representar um número
@@ -130,17 +138,20 @@ int number_of_bits(int number) {
   }
   return count;
 }
+
+number_of_bits(5); // 3
 ```
 
 ## Ligar um bit
 
 Para ligar um bit, basta usar o operador `|` com uma máscara que tenha apenas o bit que queremos ligar como 1.
 
-Por exemplo, para ligar o terceiro bit de 5 como 1, podemos fazer:
+Por exemplo, para ligar o segundo bit de 5 como 1, podemos fazer:
 
 ```cpp
-int x = 5;
-x |= (1 << 2);
+int x = 5; // 101 em binário
+
+x |= (1 << 1); // x = 7 (111 em binário)
 ```
 
 ## Desligar um bit
@@ -150,12 +161,14 @@ Primeiro garantimos que o bit está ligado, depois ele recebe ele mesmo `xor` a 
 Por exemplo, para desligar o terceiro bit de 5, podemos fazer:
 
 ```cpp
-int x = 5;
-x |= (1 << 2)
-x ^= (1 << 2)
+int x = 5; // 101 em binário
+
+x |= (1 << 2) // garantimos que o terceiro bit está ligado
+
+x ^= (1 << 2) // x = 1 (001 em binário)
 ```
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, esse exercício pode ser resolvido de várias maneiras, mas saber manipular bits te faz ter menos dor de cabeça.
 

@@ -1,5 +1,7 @@
 # Grafos
 
+## 📚 Introdução
+
 Um grafo é uma estrutura que consiste em um conjunto de pontos, chamados de vértices, e um conjunto de linhas que conectam esses vértices, chamadas de arestas. Em outras palavras, um grafo é uma representação visual de objetos (vértices) e suas conexões (arestas).
 
 Essa estrutura é usada para modelar relações entre diferentes elementos, como redes de computadores, mapas de estradas, redes sociais e muito mais. Em um grafo, os vértices representam os pontos e as arestas representam as ligações entre esses pontos.
@@ -96,7 +98,7 @@ Podemos ver a diferença entre os dois algoritmos no gif abaixo:
 
 Como podemos ver a DFS, explora o máximo possível de um caminho antes de voltar, enquanto a BFS explora em "camadas".
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [1445](https://www.beecrowd.com.br/judge/pt/problems/view/1445) do Beecrowd, esse é um exercício que pode ser resolvido com o algoritmo de busca em largura.
 

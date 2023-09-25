@@ -1,6 +1,8 @@
 # Union-Find
 
-Um jeito muito eficiente de trabalharmos com união de conjuntos  disjuntos (sem elementos pertencentes aos dois ao mesmo tempo, que é o que ocorre na maioria dos casos) é o algoritmo Union-Find.
+## 📚 Introdução
+
+Um jeito muito eficiente de trabalharmos com união de conjuntos disjuntos (sem elementos pertencentes aos dois ao mesmo tempo, que é o que ocorre na maioria dos casos) é o algoritmo Union-Find.
 
 A ideia é muito simples: vamos juntar elementos como "membros de uma mesma família" e escolher um "patriarca" para cada família.
 
@@ -96,7 +98,7 @@ def join(x, y):
     if x == y:
         return
 
-    # se x e y não estão na mesma família, vamos juntar as duas, f
+    # se x e y não estão na mesma família, vamos juntar as duas
     # fazendo com que o patriarca da maior família seja o pai do patriarca da menor família
     if peso[x] < peso[y]:
         pai[x] = y
@@ -109,8 +111,8 @@ def join(x, y):
         peso[y] += 1
 ```
 
-Essa implementação do Union-Find com suas duas funções bem otimizadas é mágica! Você pode considerar que ambas têm complexidade apenas de O(1) e fazer tranquila e eficientemente todos os problemas que precisar.
+Essa implementação do Union-Find com suas duas funções bem otimizadas é mágica! Você pode considerar que ambas têm complexidade apenas de `O(1)` e fazer tranquila e eficientemente todos os problemas que precisar.
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [2854](https://www.beecrowd.com.br/judge/pt/problems/view/2412) do Beecrowd, que caiu no aquecimento da OBI 2018, esse exercício se trata literalmente sobre "famílias" e é um ótimo exercício para treinar o Union-Find.

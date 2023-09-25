@@ -8,3 +8,4 @@
 5. [Soma Máxima em um Intervalo](soma_max_intervalo.md)
 6. [Busca Binária](busca_binaria.md)
 7. [Manipulação de bits](bits.md)
+8. [Algoritmo Guloso](guloso.md)

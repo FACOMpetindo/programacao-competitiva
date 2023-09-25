@@ -1,6 +1,10 @@
 # Filas
 
+## 📚 Introdução
+
 Uma fila é uma estrutura de dados que segue o princípio FIFO (First In, First Out), ou seja, o primeiro elemento a entrar é o primeiro a sair.
+
+Imagine uma fila de pessoas em um banco, a primeira pessoa a chegar é a primeira a ser atendida, e a última pessoa a chegar é a última a ser atendida.
 
 Filas são muito utilizadas em programação competitiva, pois são uma forma simples de organizar uma lista de elementos que precisam ser processados e mais rápidas que uma lista com o mesmo propósito.
 
@@ -8,7 +12,9 @@ Filas são muito utilizadas em programação competitiva, pois são uma forma si
 
 ### 📋 Implementação usando listas
 
-Para implementarmos uma fila usando listas, podemos usar a função `append` para adicionar elementos ao final da fila e a função `pop` para remover elementos do início da fila. Porém essa implementação é lenta, pois inserir ou remover um elemento do início da fila requer que todos os outros elementos sejam deslocados, o que custa O(n) de tempo.
+Para implementarmos uma fila usando listas, podemos usar a função `append` para adicionar elementos ao final da fila e a função `pop` para remover elementos do início da fila.
+
+Porém essa implementação é lenta, pois inserir ou remover um elemento do início da fila requer que todos os outros elementos sejam deslocados, o que custa `O(n)` de tempo.
 
 ```py
 # Inicializando uma fila vazia
@@ -40,7 +46,7 @@ print(queue)
 
 Filas em Python podem ser implementadas usando a classe deque da biblioteca padrão collections.
 
-É mais interessante usar deque sobre listas, pois deque fornece uma complexidade de tempo O(1) para operações de anexação e pop em comparação com a lista que fornece O(n) complexidade de tempo.
+É mais interessante usar deque sobre listas, pois deque fornece uma complexidade de tempo `O(1)` para operações de anexação e remoção em comparação com a lista que fornece `O(n)` complexidade de tempo.
 
 Deque é uma abreviação de Double Ended Queue (Fila de duas pontas), ou seja, uma fila que pode ser acessada tanto pelo início quanto pelo fim.
 
@@ -65,6 +71,6 @@ inicio = fila.popleft()
 fila.clear()
 ```
 
-## 📝 Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [1110](https://www.beecrowd.com.br/judge/pt/problems/view/1110) do Beecrowd, esse é um ótimo treino para filas e complexidade de tempo.
