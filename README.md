@@ -14,7 +14,7 @@ O conteúdo desse repositório é dividido em duas linguagens C++ e Python, cada
 
 Cada artigo contém uma explicação geral sobre um determinado assunto, com exemplos e exercícios para fixação e treinamento.
 
-No momento, todos os exercícios são retirados do [Beecrowd](https://br.spoj.com/), que é um juiz online brasileiro com uma grande variedade de problemas de programação competitiva.
+No momento, todos os exercícios são retirados do [Beecrowd](https://www.beecrowd.com.br/judge/pt/), que é um juiz online brasileiro com uma grande variedade de problemas de programação competitiva.
 
 Caso você queira ver a solução de algum exercício, você pode acessar o [repositório de soluções](https://github.com/falcao-g/beecrowd)
 
