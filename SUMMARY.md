@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Treinamento OBI](<INTRO.md>)
+* [Treinamento OBI](<README.md>)
 * [C++](C++/README.md)
   * [Complexidade de Algoritmos](C++/complexidade.md)
   * [Conjuntos](C++/conjuntos.md)
