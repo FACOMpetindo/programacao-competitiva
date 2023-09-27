@@ -16,7 +16,7 @@ A ideia do algoritmo consiste em:
 Vamos entender melhor com um exemplo, observe o seguinte grafo:
 
 <p align='center'>
-<img src='../assets/dji1.png' width=400>
+<img src='../assets/dji1.png' width=500>
 </p>
 
 Vamos simular o Dijkstra fazendo S=1.
@@ -24,7 +24,7 @@ Vamos simular o Dijkstra fazendo S=1.
 Primeiro, inicializamos as distâncias:
 
 <p align='center'>
-<img src='../assets/dji2.png' width=400>
+<img src='../assets/dji2.png' width=500>
 </p>
 
 <p align='center'>
@@ -35,7 +35,7 @@ O vértice de menor distância é o 7. Então, selecionamos ele e atualizamos as
 seus vizinhos.
 
 <p align='center'>
-<img src='../assets/dji4.png' width=400>
+<img src='../assets/dji4.png' width=500>
 </p>
 
 <p align='center'>
@@ -46,7 +46,7 @@ O novo vértice de menor distância é o 2. Selecionamos então ele e só altera
 mudar o 4).
 
 <p align='center'>
-<img src='../assets/dji6.png' width=400>
+<img src='../assets/dji6.png' width=500>
 </p>
 
 <p align='center'>
@@ -56,7 +56,7 @@ mudar o 4).
 O novo vértice mais próximo é o vértice 4. Com ele, podemos atualizar a distância do vértice 5 e do vértice 3.
 
 <p align='center'>
-<img src='../assets/dji8.png' width=400>
+<img src='../assets/dji8.png' width=500>
 </p>
 
 <p align='center'>
@@ -66,7 +66,7 @@ O novo vértice mais próximo é o vértice 4. Com ele, podemos atualizar a dist
 O novo vértice mais próximo é o 3, mas não conseguimos mudar nenhuma distância.
 
 <p align='center'>
-<img src='../assets/dji10.png' width=400>
+<img src='../assets/dji10.png' width=500>
 </p>
 
 <p align='center'>
@@ -76,7 +76,7 @@ O novo vértice mais próximo é o 3, mas não conseguimos mudar nenhuma distân
 O novo vértice mais próximo é o 5, mas também não atualizamos nenhuma distância.
 
 <p align='center'>
-<img src='../assets/dji12.png' width=400>
+<img src='../assets/dji12.png' width=500>
 </p>
 
 <p align='center'>
