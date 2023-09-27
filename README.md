@@ -1,4 +1,4 @@
-# Treinamento OBI
+# Programação Competitiva
 
 ## 🤵 Introdução
 
