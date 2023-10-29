@@ -87,20 +87,16 @@ Repare que não acessamos o 6 nenhuma vez, pois a distância dele ao 1 é infini
 
 ## 🧠 Exemplo de aplicação
 
-Imagine o seguinte problema:
-
-"O cientista Succa Liaudzionis decidiu tirar férias na Europa. Enquanto ele estava em seu descanso, o cientista Sictor Vales fez uma descoberta impressionante no quartel-general do Núcleo Organizado de Informática e Computação (NOIC). Agora, Succa precisa voltar imediatamente para o quartel do Noic para poder avaliar a descoberta. Succa foi para o aeroporto, mas a quantidade de voos disponíveis é muito grande (repare que alguns podem ter conexões) e ele precisa saber qual o menor tempo para que possa voltar para a base."
+Imagine que você está de férias na europa, mas agora está morrendo de saudades da sua casa, então você decide voltar para o Brasil o mais rápido possível, você sabe que existem voos entre algumas cidades da europa e que cada voo tem um tempo de duração, você quer saber qual o menor tempo que você pode levar para chegar no Brasil.
 
 É possível modelar esse problema como um grafo, onde:
 
 - Vértices: Cada uma das cidades disponíveis que possuem voos.
 - Arestas: Cada um dos voos. Aqui, o peso de cada aresta é o tempo de duração de voo.
 
-Queremos então achar o menor caminho da cidade de onde Succa está para a cidade onde o Noic está.
-
 ## 🤓 Implementação
 
-Vamos ver como implmentar o algoritmo de Dijkstra para resolver o problema do Succa.
+Vamos ver como implmentar o algoritmo de Dijkstra para resolver o problema.
 
 É necessário pensar na lógica das duas partes principais do algoritmo: como encontrar o vértice mais próximo (vamos chamar de u) e como atualizar os valores para os vizinhos de u.
 
@@ -119,7 +115,7 @@ import heapq
 n, m = map(int, input().split())
 
 # vértice de origem
-cidade_succa, cidade_noic = map(int, input().split())
+cidade_origem, cidade_destino = map(int, input().split())
 
 # vetor de distâncias
 distancia = [float('inf')] * (n + 1)
@@ -167,8 +163,8 @@ for _ in range(m):
     vizinhos[x].append((tempo, y))
     vizinhos[y].append((tempo, x))
 
-Dijkstra(cidade_succa)
-print(distancia[cidade_noic])
+Dijkstra(cidade_origem)
+print(distancia[cidade_destino])
 ```
 
 A complexidade do algoritmo é `O(MlogN)`, onde M é o número de arestas e N é o número de vértices.
