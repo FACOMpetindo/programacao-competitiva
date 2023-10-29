@@ -24,5 +24,5 @@
   * [Filas de prioridade](Python/filas\_prioridade.md)
   * [Grafos](Python/grafos.md)
   * [Union-Find](Python/union\_find.md)
-  * [Algoritmo de Dijkstra](Python/menor\_caminho\_1.md)
-  * [Algoritmo de Floyd-Warshall](Python/menor\_caminho\_2.md)
+  * [Menor caminho - 1](Python/menor\_caminho\_1.md)
+  * [Menor caminho - 2](Python/menor\_caminho\_2.md)
