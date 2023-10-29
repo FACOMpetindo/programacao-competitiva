@@ -116,3 +116,5 @@ Essa implementação do Union-Find com suas duas funções bem otimizadas é má
 ## 🧑‍🏫 Exercícios
 
 - Exercício [2854](https://www.beecrowd.com.br/judge/pt/problems/view/2412) do Beecrowd, que caiu no aquecimento da OBI 2018, esse exercício se trata literalmente sobre "famílias" e é um ótimo exercício para treinar o Union-Find.
+
+- Exercício [2959](https://www.beecrowd.com.br/judge/pt/problems/view/2959) do Beecrowd, esse é bem diferente do anterior, mas também é pode ser resolvido com Union-Find.

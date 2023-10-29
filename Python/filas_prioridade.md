@@ -76,3 +76,7 @@ Quando uma batalha ocorre, removemos o pokemon mais forte da fila e imprimimos s
 ## 📚 Leia mais
 
 - [GeeksforGeeks - Heap Queue in Python](https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/)
+
+## 🧑‍🏫 Exercícios
+
+- Exercício [2958](https://www.beecrowd.com.br/judge/pt/problems/view/2958) do Beecrowd, esse problema se trata em priorizar tarefas, ótimo pra se resolver com filas de prioridade!
