@@ -1,0 +1,27 @@
+name: 🧠 Sugestão de tópico
+description: Sugira um novo tópico para ser adicionado ao livro ou conteúdo que pode ser melhorado.
+labels: [melhoria]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de sugerir uma nova melhoria, certifique-se de que essa sugestão já não foi feita. Caso encontre uma sugestão similar, você pode contribuir para a discussão, se necessário.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      placeholder: |
+        Eu gostaria de ver um artigo sobre...
+        Eu acho que o artigo pode ser melhorado se...
+        Encontrei novos materiais sobre...
+        Podemos adicionar esse exercício...
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Materiais e exemplos
+      description: Links, exercícios, exemplos de código, qualquer coisa que nos ajude a escrever um artigo sobre aquele assunto
+      placeholder: |
+        Tem um artigo legal sobre isso em...
+        Encontrei esse exercício que pode ser adicionado...

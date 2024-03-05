@@ -1,0 +1,5 @@
+contact_links:
+  - name: Discussões do GitHub
+    url: https://github.com/Facompetindo/programacao-competitiva/discussions
+    about: Tem uma dúvida? Quer discutir sobre um tópico? Acesse as discussões do GitHub.
+blank_issues_enabled: false

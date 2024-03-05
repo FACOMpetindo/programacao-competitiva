@@ -1,0 +1,26 @@
+name: ❓ Reportar um erro
+description: Nos ajude a melhorar o conteúdo do livro reportando um erro.
+labels: [erro]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de apontar algum erro, tenha certeza que ele já não foi reportado. Se você encontrar um problema similar, você pode contribuir para a discussão e fornecer mais informações sobre o problema.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      placeholder: |
+        O artigo de grafos está com um erro...
+        Não consigo acessar o link...
+        O código de exemplo não funciona...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução proposta
+      description: Tem alguma ideia de como resolver o problema?
+      placeholder: |
+        Eu acho que o problema pode ser resolvido...
+        Achei um link que pode ajudar...
