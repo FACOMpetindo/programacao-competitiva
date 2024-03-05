@@ -17,7 +17,7 @@ Para contribuir com um tópico, você deve seguir alguns passos:
 1. Clone o repositório em sua máquina.
 2. Crie uma branch com o nome do tópico que você deseja contribuir.
 3. Crie um arquivo markdown com o nome do tópico que você deseja contribuir.
-4. Escreva o conteúdo do tópico no arquivo markdown, seguindo o padrão dos outros tópicos.
+4. Escreva o conteúdo do tópico no arquivo markdown, seguindo o padrão dos outros tópicos, lembre-se de incluir uma introdução, explicação do tópico, exemplos, referências e exercícios.
 5. Adicione o arquivo markdown ao índice do repositório.
 6. Faça um commit com uma mensagem que descreva o que você fez.
 7. Após isso, faça o push para o repositório do fork.
