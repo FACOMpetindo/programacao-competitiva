@@ -4,7 +4,7 @@
 
 Programação Competitiva é uma área da computação que visa resolver problemas de forma eficiente, para isso, é necessário conhecer algoritmos e estruturas de dados que auxiliam na resolução desses problemas.
 
-No Brasil temos algumas competições de programação, como a Olimpíada Brasileira de Informática (OBI), que é uma competição de programação para alunos do ensino fundamental, médio e técnico e a Maratona de Programação da SBC, que é uma competição de programação para alunos do ensino superior.
+No Brasil temos algumas competições de programação, como a Olimpíada Brasileira de Informática (OBI), que é uma competição de programação para alunos do ensino fundamental, médio e técnico e a Maratona de Programação da SBC e a Maratona Feminina de Programação, ambas voltadas para alunos de ensino superior.
 
 O foco deste livro é auxiliar na preparação para a OBI, porém o conteúdo aqui presente pode ser utilizado para qualquer competição de programação.
 
