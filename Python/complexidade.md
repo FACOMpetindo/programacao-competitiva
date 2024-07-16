@@ -53,13 +53,13 @@ A complexidade de tempo desse algoritmo é `O(n^2)`, temos um crescimento quadr�
 
 Aqui estão alguns exemplos das complexidades de tempo mais comuns:
 
-* **O(1)**: Constante
-* **O(log n)**: Logarítmica
-* **O(n)**: Linear
-* **O(n log n)**: Linearítmica
-* **O(n^2)**: Quadrática
-* **O(n^3)**: Cúbica
-* **O(2^n)**: Exponencial
+- **O(1)**: Constante
+- **O(log n)**: Logarítmica
+- **O(n)**: Linear
+- **O(n log n)**: Linearítmica
+- **O(n^2)**: Quadrática
+- **O(n^3)**: Cúbica
+- **O(2^n)**: Exponencial
 
 É importante se atentar a complexidade de tempo de um algoritmo, pois ela pode ser a diferença entre um algoritmo que roda em 1 segundo e um que roda em 1 minuto, como podemos ver no gráfico abaixo:
 
@@ -75,9 +75,7 @@ Vamos pensar em um exercício que nos peça pra achar o menor valor em um vetor,
 
 A menor complexidade possível é `O(n)`! pois precisamos olhar para cada elemento do vetor para saber qual é o menor valor, não tem como fazer isso sem olhar para cada elemento, veremos problemas muito mais complicados que esse mais para frente, e teremos que usar algoritmos com complexidades ainda piores, assim, é importante entender qual complexidade é aceitável levando em conta o tempo disponível e o tamanho da entrada, para isso, consulte a tabela abaixo:
 
-<p align='center'>
-<img src="../assets/piores-compl.png" width=500>
-</p>
+<figure><img src="../assets/piores-compl.png" alt="Piores complexidades aceitáveis"><figcaption></figcaption></figure>
 
 Para cada tamanho de entrada $n$, temos as piores complexidades que são aceitáveis para passar o problema.
 
