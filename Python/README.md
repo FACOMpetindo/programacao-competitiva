@@ -1,3 +1,9 @@
+# 🐍 Por que usar Python?
+
+Python se destaca por ser uma linguagem de fácil entendimento e uma ótima escolha para iniciantes, ou até mesmo pessoas que já possuem experiência em programação, por sua sintaxe limpa e simples.
+
+Ela é uma ótima escolha para competições de programação por sua facilidade em implementar algoritmos complexos de forma simples e rápida, por conter muitas estruturas já implementadas em bibliotecas padrão e por ser uma linguagem de alto nível.
+
 # ⚙️ Conteúdo
 
 0. [Complexidade](complexidade.md)
