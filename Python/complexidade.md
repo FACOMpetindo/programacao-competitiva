@@ -49,17 +49,17 @@ A complexidade de tempo desse algoritmo é `O(n^2)`.
 
 Vejamos as complexidades mais comuns de algoritmos:
 
-- **O(1)**: Constante
-- **O(log n)**: Logarítmica
-- **O(n)**: Linear
-- **O(n log n)**: Linearítmica
-- **O(n^2)**: Quadrática
-- **O(n^3)**: Cúbica
-- **O(2^n)**: Exponencial
+* **O(1)**: Constante
+* **O(log n)**: Logarítmica
+* **O(n)**: Linear
+* **O(n log n)**: Linearítmica
+* **O(n^2)**: Quadrática
+* **O(n^3)**: Cúbica
+* **O(2^n)**: Exponencial
 
 É importante se atentar a complexidade de tempo de um algoritmo, pois ela pode ser a diferença entre um algoritmo que roda em 1 segundo e um que roda em 1 minuto, como podemos ver no gráfico abaixo:
 
-<img alt="Complexity time graph" src="https://www.raebear.net/media/2017/12/jIGhf.png" />
+<figure><img src="https://www.raebear.net/media/2017/12/jIGhf.png" alt=""><figcaption></figcaption></figure>
 
 Ao longo da nossa jornada, vamos estudar algoritmos que possuem complexidades de tempo diferentes.
 
