@@ -63,7 +63,7 @@ Aqui estão alguns exemplos das complexidades de tempo mais comuns:
 
 É importante se atentar a complexidade de tempo de um algoritmo, pois ela pode ser a diferença entre um algoritmo que roda em 1 segundo e um que roda em 1 minuto, como podemos ver no gráfico abaixo:
 
-<img alt="Gráfico de complexidades" src="https://www.raebear.net/media/2017/12/jIGhf.png" />
+<img alt="Gráfico de complexidades" src="https://www.raebear.net/media/2017/12/jIGhf.png" width=500 />
 
 Ao longo da nossa jornada, vamos estudar algoritmos que possuem complexidades de tempo diferentes, levando em conta os diferentes problemas que vamos enfrentar.
 
@@ -76,7 +76,7 @@ Vamos pensar em um exercício que nos peça pra achar o menor valor em um vetor,
 A menor complexidade possível é `O(n)`! pois precisamos olhar para cada elemento do vetor para saber qual é o menor valor, não tem como fazer isso sem olhar para cada elemento, veremos problemas muito mais complicados que esse mais para frente, e teremos que usar algoritmos com complexidades ainda piores, assim, é importante entender qual complexidade é aceitável levando em conta o tempo disponível e o tamanho da entrada, para isso, consulte a tabela abaixo:
 
 <p align='center'>
-<img src='../assets/piores-compl.png' width=500>
+<img src="../assets/piores-compl.png" width=500>
 </p>
 
 Para cada tamanho de entrada $n$, temos as piores complexidades que são aceitáveis para passar o problema.
