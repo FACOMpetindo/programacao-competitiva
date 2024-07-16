@@ -11,62 +11,62 @@ Todos os dados que são armazenados em um computador são representados por bits
 O operador `|` é o operador de ou, ou OR. Ele retorna 1 se pelo menos um dos bits for 1, e 0 caso contrário.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| 0 \| 0    | 0         |
-| 0 \| 1    | 1         |
-| 1 \| 0    | 1         |
-| 1 \| 1    | 1         |
+| :------: | :-------: |
+|  0 \| 0  |     0     |
+|  0 \| 1  |     1     |
+|  1 \| 0  |     1     |
+|  1 \| 1  |     1     |
 
 ### Operador `^`
 
 O operador `^` é o operador de ou exclusivo, ou XOR. Ele retorna 1 se os bits forem diferentes, e 0 se forem iguais.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| 0 ^ 0    | 0         |
-| 0 ^ 1    | 1         |
-| 1 ^ 0    | 1         |
-| 1 ^ 1    | 0         |
+| :------: | :-------: |
+|  0 ^ 0   |     0     |
+|  0 ^ 1   |     1     |
+|  1 ^ 0   |     1     |
+|  1 ^ 1   |     0     |
 
 ### Operador `&`
 
 O operador `&` é o operador de e, ou AND. Ele retorna 1 se os dois bits forem 1, e 0 caso contrário.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| 0 & 0    | 0         |
-| 0 & 1    | 0         |
-| 1 & 0    | 0         |
-| 1 & 1    | 1         |
+| :------: | :-------: |
+|  0 & 0   |     0     |
+|  0 & 1   |     0     |
+|  1 & 0   |     0     |
+|  1 & 1   |     1     |
 
 ### Operador `~`
 
 O operador `~` é o operador de negação, ou NOT. Ele inverte todos os bits.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| ~0       | 1         |
-| ~1       | 0         |
+| :------: | :-------: |
+|    ~0    |     1     |
+|    ~1    |     0     |
 
 ### Operador `<<`
 
 O operador `<<` é o operador de deslocamento à esquerda. Ele desloca todos os bits para a esquerda, e preenche os bits vazios com 0.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| 1 << 1   | 2         |
-| 1 << 2   | 4         |
-| 5 << 2   | 20        |
+| :------: | :-------: |
+|  1 << 1  |     2     |
+|  1 << 2  |     4     |
+|  5 << 2  |    20     |
 
 ### Operador `>>`
 
 O operador `>>` é o operador de deslocamento à direita. Ele desloca todos os bits para a direita, e preenche os bits vazios com 0.
 
 | Operação | Resultado |
-|:--------:|:---------:|
-| 1 >> 1   | 0         |
-| 4 >> 1   | 2         |
-| 5 >> 2   | 1         |
+| :------: | :-------: |
+|  1 >> 1  |     0     |
+|  4 >> 1  |     2     |
+|  5 >> 2  |     1     |
 
 ## Checar se um bit está ligado
 
@@ -102,7 +102,7 @@ int.bit_count(5) # 2
 
 ## Checar se um número é potência de 2
 
-Se o númerno não for 0, vemos se ele tem algum bit em comum com seu antecessor, pois se ele for uma potência de 2, digamos 2**i, o único bit ligado será o i, enquanto seu antecessor tem todos os bits menores que i iguais a 1, assim o and deles será 0.
+Se o númerno não for 0, vemos se ele tem algum bit em comum com seu antecessor, pois se ele for uma potência de 2, digamos 2\*\*i, o único bit ligado será o i, enquanto seu antecessor tem todos os bits menores que i iguais a 1, assim o and deles será 0.
 
 ```py
 x = 5
@@ -143,6 +143,6 @@ x ^= (1 << 2) # 1 (001 em binário)
 
 ## 🧑‍🏫 Exercícios
 
-- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, esse exercício pode ser resolvido de várias maneiras, mas saber manipular bits te faz ter menos dor de cabeça.
+- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, esse exercício pode ser resolvido de várias maneiras, mas saber manipular bits te dá menos dor de cabeça.
 
 - Exercício [1026](https://www.beecrowd.com.br/judge/pt/problems/view/1026) do Beecrowd, também é um ótimo exercício para praticar manipulação de bits.
