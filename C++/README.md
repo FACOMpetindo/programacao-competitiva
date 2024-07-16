@@ -2,7 +2,11 @@
 
 C++ é uma ótima linguagem para competições de programação, pela sua alta velocidade de execução e funções e estruturas pré-definidas na sua biblioteca padrão.
 
-Também, ela é a linguagem mais utilizada nas fases mais avançadas das competições, como a Maratona de Programação da SBC e a ICPC.
+Também, ela é a linguagem mais utilizada nas fases mais avançadas das competições, como a Maratona de Programação da SBC e a ICPC:
+
+<p align='center'>
+<img src='../assets/c++est.png' width=500>
+</p>
 
 # ⚙️ Conteúdo
 
