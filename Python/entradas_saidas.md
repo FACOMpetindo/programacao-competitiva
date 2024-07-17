@@ -103,7 +103,7 @@ sys.stdout.write(f'{a}\n')
 
 ## 🧑‍🏫 Exercícios
 
-Nenhum exercício listado aqui precisam de fast io, porém, eles são bons para treinar o uso do `sys.stdin.readline()` e do `sys.stdout.write()`, assim quando você encontrar um onde o tempo é um problema, usar esses métodos é um bom truque a se aplicar.
+Nenhum dos exercícios sugeridos abaixo necessariamente demanda o fast io, mas é uma boa hora pra você treinar isso e os diferentes tipos de entradas que vimos!
 
 - Exercício [2850](https://judge.beecrowd.com/pt/problems/view/2850) do Beeecrowd, que estava no aquecimento da OBI 2018, na fase nacional.
 

@@ -107,6 +107,28 @@ print(conjunto1.difference(conjunto2)) # {1, 2, 3}
 
 Existem muitos outros métodos úteis para conjuntos, como `issubset`, `issuperset`, `symmetric_difference`, etc, um bom local para conferir todos os métodos é a [W3Schools](https://www.w3schools.com/python/python_sets_methods.asp).
 
+## 🚀 Demonstração
+
+Vamos analisar o exercício 2410 do Beecrowd que caiu na OBI 2012, o enunciado do exercício é o seguinte:
+
+<figure><img src="../assets/2410.png" alt="Exercício 2410 do Beecrowd"><figcaption></figcaption></figure>
+
+Primeiramente, esse exercício pode parecer muito simples de resolver! Simplesmente lemos as entradas, colocamos o número do aluno em uma lista se ele não estava lá, e no final verificamos o tamanho da lista, certo?
+
+Não exatamente, o problema é que a lista é uma estrutura de dados muito lenta para esse problema, como o enunciado nos diz que podemos ter até 10ˆ5 alunos, temos que olhar na lista 10ˆ5 vezes (pois você pode ter certeza que um dos casos de teste terá o número máximo de alunos), e essa verificação tem complexidade O(n), ou seja, a solução terá complexidade O(nˆ2), o que é muito lento para esse problema.
+
+Mas esquecemos um detalhe importante, o enunciado nos diz que os números dos alunos são únicos, ou seja, não temos números repetidos, e isso é um indicativo claro de que devemos usar um conjunto, já que como discutimos, ele não aceita números repetidos, podemos simplesmente adicionar (e a operação de adição custa O(1)) cada aluno a um conjunto e usar a função `len()` para ver quantos alunos foram pra aula!
+
+```py
+import sys
+presente = set()
+
+for i in range(int(sys.stdin.readline())):
+    presente.add(sys.stdin.readline())
+
+sys.stdout.write(f'{len(presente)}\n')
+```
+
 ## 🧑‍🏫 Exercícios
 
 - Exercício [1581](https://www.beecrowd.com.br/judge/pt/problems/view/1581) do Beecrowd, esse é um exercício que é resolvido facilmente com conjuntos.
