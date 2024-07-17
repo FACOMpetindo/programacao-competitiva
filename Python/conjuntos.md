@@ -73,7 +73,7 @@ if 3 in conjunto:
     print('3 está presente no conjunto')
 ```
 
-Essa é uma das grandes vantagens do conjunto em relação a lista, a verificação de pertencimento é muito mais rápida em um conjunto do que em uma lista, pois em um conjunto essa verificação é feita em tempo constante, enquanto em uma lista essa verificação é feita em tempo linear.
+Essa é uma das grandes vantagens do conjunto em relação a lista, a verificação de pertencimento é muito mais rápida em um conjunto do que em uma lista, tendo uma complexidade de O(1) em um conjunto e O(n) em uma lista.
 
 ## ⚙️ Operações com conjuntos
 
