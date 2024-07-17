@@ -135,7 +135,7 @@ sys.stdout.write(f'{len(presente)}\n')
 
 - Exercício [2322](https://www.beecrowd.com.br/judge/pt/problems/view/2322) do Beecrowd, que caiu na OBI 2007, esse é um exercício simples que serve para treinar o uso de conjuntos.
 
-- Exercício [2410](https://www.beecrowd.com.br/judge/pt/problems/view/2410) do Beecrowd, que caiu na OBI 2012, esse exercício é ótimo para mostrar a diferença de tempo entre a verificação de pertencimento em um conjunto e em uma lista.
+- Exercício [2410](https://www.beecrowd.com.br/judge/pt/problems/view/2410) tente replicar a solução que foi discutida acima.
 
 - Exercício [2469](https://www.beecrowd.com.br/judge/pt/problems/view/2469) do Beecrowd, que caiu na OBI 2014, esse exercício pode ser resolvido de várias maneiras, mas uma das mais simples é usando um conjunto e uma lista.
 
