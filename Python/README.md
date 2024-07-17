@@ -7,7 +7,7 @@ Ela é uma ótima escolha para competições de programação por sua facilidade
 # ⚙️ Conteúdo
 
 0. [Complexidade](complexidade.md)
-1. [Fast I/O](fast_io.md)
+1. [Entradas e saídas](entradas_saidas.md)
 2. [Conjuntos](conjuntos.md)
 3. [Crivo de Erástotenes](crivo.md)
 4. [Algoritmo de Euclides](euclides.md)
