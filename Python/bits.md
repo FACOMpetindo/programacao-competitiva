@@ -4,6 +4,8 @@
 
 Todos os dados que são armazenados em um computador são representados por bits, que são 0s e 1s. Por exemplo, o número 5 é representado por 101 em binário, e o número 7 é representado por 111.
 
+Em programação competitiva, existem alguns momentos em que se é vantajoso manipular diretamente os bits de um número, vamos ver algumas operações que podemos fazer com eles.
+
 ## 📌 Operadores binários
 
 ### Operador `|`
@@ -141,8 +143,31 @@ x |= (1 << 2)
 x ^= (1 << 2) # 1 (001 em binário)
 ```
 
+## 🚀 Demonstração
+
+Falamos bastante sobre diversas operações diferentes que podem ser feitas com bits, mas como isso pode ser útil nos problemas? Vamos ver um exemplo, no exercício 2544 do Beecrowd:
+
+<figure><img src="../assets/2544.png" alt="Exercício 2544 do Beecrowd"><figcaption></figcaption></figure>
+
+Nesse exercício, temos que escrever um programa que soma da forma incorreta, assim como o circuito feito pelo Mofiz, note que, pelo exemplo de soma que ele deu, 0 + 0 = 0; 1 + 0 = 1 e 1 + 1 = 0. Isso é a mesma coisa que o operador `xor`! Então podemos fazer o seguinte código:
+
+```py
+while True:
+    try:
+        num1, num2 = map(int, input().split())
+    except:
+        break
+    print(num1^num2)
+```
+
+E com isso resolvemos o problema de uma maneira extremamente simples!
+
 ## 🧑‍🏫 Exercícios
 
-- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, esse exercício pode ser resolvido de várias maneiras, mas saber manipular bits te dá menos dor de cabeça.
+- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, tente reproduzir a solução que fizemos acima.
 
 - Exercício [1026](https://www.beecrowd.com.br/judge/pt/problems/view/1026) do Beecrowd, também é um ótimo exercício para praticar manipulação de bits.
+
+- Exercício [2091](https://www.beecrowd.com.br/judge/pt/problems/view/2290) do Beecrowd, é um pouco mais desafiante, mas mostra mais uma vez como a manipulação de bits pode ser útil.
+
+- Exercício [2290](https://www.beecrowd.com.br/judge/pt/problems/view/2290) do Beecrowd, é uma versão um pouco mais difícil do exercício anterior.
