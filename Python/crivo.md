@@ -71,3 +71,9 @@ def crivo(n):
 Essa solução tem uma complexidade de `O(N * log(log(N)))`, sendo assim bastante rápida.
 
 Para finalizar, temos que ter em mente que o Crivo de Erástotenes é um algoritmo muito eficiente para encontrar todos os números primos até um determinado número, mas, temos que ter em mente que criamos uma lista com o tamanho do número `Q`, e que fazemos múltiplas operações repetidas, então em casos onde você precisa responder poucas vezes se um número é primo ou não, a solução ingênua otimizada pode ser mais eficiente.
+
+## 🧑‍🏫 Exercícios
+
+- Exercício [1165](https://www.beecrowd.com.br/judge/pt/problems/view/1165) do Beecrowd, não tem muito o que falar sobre esse exercício, diga se um número é primo ou não!
+
+- Exercício [3002](https://www.beecrowd.com.br/judge/pt/problems/view/3002) do Beecrowd, esse exercício gira em torno de números primos e de uma propriedade matemática chamada de Conjectura de Goldbach, um problema muito interessante e que vale a pena tentar resolver!
