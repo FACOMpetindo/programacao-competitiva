@@ -73,9 +73,10 @@ a, b = map(int, sys.stdin.readline().split())
 vet = [int(x) for x in sys.stdin.readline().split()]
 ```
 
-Como pode ver, na maior parte dos casos só trocar o `input()` por `sys.stdin.readline()` é suficiente, porém temos que manter algo em mente ao usar o `sys.stdin.readline()`:
+Como pode ver, na maior parte dos casos só trocar o `input()` por `sys.stdin.readline()` é suficiente, porém temos que manter algumas coisas em mente ao usar o `sys.stdin.readline()`:
 
 - Ele lê o `\n` no final da linha, isso normalmente não afeta em nada, pois o `split()` e `int()` já o removem, porém se quisermos ler uma única string a cada linha, temos que usar o `.rstrip()`.
+- Essa função dá um erro diferente de `EOFError` ao ler um EOF, então temos que usar o `try` e `except` para lidar com isso.
 
 ## 📤 Saídas
 
