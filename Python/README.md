@@ -15,7 +15,7 @@ Ela é uma ótima escolha para competições de programação por sua facilidade
 6. [Busca Binária](busca_binaria.md)
 7. [Manipulação de bits](bits.md)
 8. [Algoritmo guloso](guloso.md)
-9. [Filas](filas.md)
+9. [Filas e Pilhas](filas_pilhas.md)
 10. [Filas de prioridade](filas_prioridade.md)
 11. [Grafos](grafos.md)
 12. [Union-Find](union_find.md)
