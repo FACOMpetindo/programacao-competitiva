@@ -4,6 +4,8 @@
 
 O crivo de Eratóstenes é um algoritmo que permite encontrar todos os números primos até um determinado número `n`.
 
+## 🤷 Como funciona?
+
 Pense no seguinte problema, dado um número Q, devemos responder para cada número de 0 até Q-1 se ele é ou não é primo, por exemplo se Q = 100, precisamos responder para todo número de 0 até 99 se eles são primos. Como podemos resolver esse problema?
 
 Uma solução ingênua seria, para cada um dos Q números (chamamos tal número de N), testar se ele é divisível por algum número de 2 até N-1, por exemplo:
