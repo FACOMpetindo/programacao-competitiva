@@ -6,6 +6,8 @@ O algoritmo de Dijkstra é um algoritmo guloso que encontra o menor caminho entr
 
 Ele recebe um vértice principal S para ser a fonte do grafo e retorna o menor caminho de todos os vértices do grafo para S.
 
+## 🤷 Como funciona?
+
 A ideia do algoritmo consiste em:
 
 - Definir a distância como ∞ para todos os vértices e como 0 para o vértice S.
@@ -15,73 +17,47 @@ A ideia do algoritmo consiste em:
 
 Vamos entender melhor com um exemplo, observe o seguinte grafo:
 
-<p align='center'>
-<img src='../assets/dji1.png' width=500>
-</p>
+<figure><img src="../assets/dji1.png" alt="primeira imagem do dijkstra"><figcaption></figcaption></figure>
 
 Vamos simular o Dijkstra fazendo S=1.
 
 Primeiro, inicializamos as distâncias:
 
-<p align='center'>
-<img src='../assets/dji2.png' width=500>
-</p>
+<figure><img src="../assets/dji2.png" alt="segunda imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji3.png' width=400>
-</p>
+<figure><img src="../assets/dji3.png" alt="terceira imagem do dijkstra"><figcaption></figcaption></figure>
 
 O vértice de menor distância é o 7. Então, selecionamos ele e atualizamos as distâncias dos vértices 3 e 4, que são
 seus vizinhos.
 
-<p align='center'>
-<img src='../assets/dji4.png' width=500>
-</p>
+<figure><img src="../assets/dji4.png" alt="quarta imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji5.png' width=400>
-</p>
+<figure><img src="../assets/dji5.png" alt="quinta imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice de menor distância é o 2. Selecionamos então ele e só alteramos a distância do vértice 3 (pois não compensa
 mudar o 4).
 
-<p align='center'>
-<img src='../assets/dji6.png' width=500>
-</p>
+<figure><img src="../assets/dji6.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji7.png' width=400>
-</p>
+<figure><img src="../assets/dji7.png" alt="sétima imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o vértice 4. Com ele, podemos atualizar a distância do vértice 5 e do vértice 3.
 
-<p align='center'>
-<img src='../assets/dji8.png' width=500>
-</p>
+<figure><img src="../assets/dji8.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji9.png' width=400>
-</p>
+<figure><img src="../assets/dji9.png" alt="nona imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o 3, mas não conseguimos mudar nenhuma distância.
 
-<p align='center'>
-<img src='../assets/dji10.png' width=500>
-</p>
+<figure><img src="../assets/dji1.png" alt="décima imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji11.png' width=400>
-</p>
+<figure><img src="../assets/dji1.png" alt="décima primeira imagem do dijkstra"><figcaption></figcaption></figure>
 
 O novo vértice mais próximo é o 5, mas também não atualizamos nenhuma distância.
 
-<p align='center'>
-<img src='../assets/dji12.png' width=500>
-</p>
+<figure><img src="../assets/dji1.png" alt="décima segunda imagem do dijkstra"><figcaption></figcaption></figure>
 
-<p align='center'>
-<img src='../assets/dji13.png' width=400>
-</p>
+<figure><img src="../assets/dji1.png" alt="décima terceira imagem do dijkstra"><figcaption></figcaption></figure>
 
 Repare que não acessamos o 6 nenhuma vez, pois a distância dele ao 1 é infinita, o que significa que não temos como chegar nele, o que é facilmente observado como verdadeiro.
 
@@ -94,13 +70,13 @@ Imagine que você está de férias na europa, mas agora está morrendo de saudad
 - Vértices: Cada uma das cidades disponíveis que possuem voos.
 - Arestas: Cada um dos voos. Aqui, o peso de cada aresta é o tempo de duração de voo.
 
-## 🤓 Implementação
+## 📝 Implementação
 
 Vamos ver como implmentar o algoritmo de Dijkstra para resolver o problema.
 
 É necessário pensar na lógica das duas partes principais do algoritmo: como encontrar o vértice mais próximo (vamos chamar de u) e como atualizar os valores para os vizinhos de u.
 
-Podemos manter todas as distâncias em uma fila de prioridade (priority queue, heap), dessa maneira esse passo custa `O(logN)`.
+Podemos manter todas as distâncias em uma fila de prioridade (priority queue, heap), dessa maneira esse passo custa `O(log N)`.
 
 Para o segundo passo, simplesmente percorremos por todos os vizinhos do vértice u e atualizamos as distâncias se necessário.
 
@@ -167,4 +143,6 @@ Dijkstra(cidade_origem)
 print(distancia[cidade_destino])
 ```
 
-A complexidade do algoritmo é `O(MlogN)`, onde M é o número de arestas e N é o número de vértices.
+A complexidade do algoritmo é `O(M * log N)`, onde M é o número de arestas e N é o número de vértices.
+
+Podemos ver, então que o algoritmo de Dijkstra é uma ótima escolha para resolver problemas de menor caminho em grafos com arestas de peso não negativo.
