@@ -19,5 +19,5 @@ Ela é uma ótima escolha para competições de programação por sua facilidade
 10. [Filas de prioridade](filas_prioridade.md)
 11. [Grafos](grafos.md)
 12. [Union-Find](union_find.md)
-13. [Menor caminho parte 1](menor_caminho_1.md)
-14. [Menor caminho parte 2](menor_caminho_2.md)
+13. [Menor caminho - 1](menor_caminho_1.md)
+14. [Menor caminho - 2](menor_caminho_2.md)
