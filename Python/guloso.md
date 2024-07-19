@@ -70,12 +70,12 @@ else:
 # Complexidade: O(n log n)
 ```
 
-## 🤔 Por que funciona?
-
-A ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação.
+A ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação, isso nos ajuda a reduzir a complexidade de um problema, enquanto ainda conseguimos uma solução eficiente.
 
 No caso do exemplo, a opção ideal é sempre comprar do fornecedor mais barato, pois assim gastamos menos dinheiro.
 
 ## 🧑‍🏫 Exercícios
 
 - Exercício [2387](https://www.beecrowd.com.br/judge/pt/problems/view/2387) do Beecrowd, que caiu na OBI 2010, esse exercício é um ótimo exemplo de um problema que pode ser resolvido com um algoritmo guloso.
+
+- Exercício [2095](https://www.beecrowd.com.br/judge/pt/problems/view/2095) do Beecrowd, que caiu na OBI 2010, outro bom exemplo de como podemos resolver exercícios complexos de mandeira relativamente fácil pensando de forma gulosa.
