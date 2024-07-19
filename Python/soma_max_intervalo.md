@@ -2,11 +2,11 @@
 
 ## 📚 Introdução
 
-Um exemplo de exercício que aparece em competições de programação é o problema da soma máxima em um intervalo. O problema consiste em dado um vetor de números inteiros, encontrar a soma máxima de um intervalo desse vetor.
+Um exemplo de exercício que aparece em competições de programação é o problema da soma máxima em um intervalo. Ele consiste em dado um vetor de números inteiros, encontrar a soma máxima de um intervalo desse vetor.
 
 Por exemplo, dado o vetor `[1, 2, -3, 4, 5]`, a soma máxima de um intervalo desse vetor é `9`, que é a soma do intervalo `[4, 5]`.
 
-Uma solução ingênua para esse problema seria testar todas as possíveis somas de intervalos do vetor, e retornar a maior soma encontrada. Porém, essa solução tem complexidade `O(n³)`, o que não é suficiente para resolver o problema em tempo hábil.
+Uma solução ingênua para esse problema seria testar todas as possíveis somas de intervalos do vetor, e retornar a maior soma encontrada. Porém, essa solução tem complexidade `O(n³)`, o que não é suficiente para resolver esse tipo de problema em tempo hábil.
 
 ## 🤷 Como resolver?
 

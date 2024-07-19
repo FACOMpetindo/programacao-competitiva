@@ -10,24 +10,20 @@ Cada elemento terá seu elemento "pai", e aquele que não tem (que é pai de si 
 
 Olhar se dois elementos estão na mesma família é muito simples, basta verificar se eles têm o mesmo patriarca!
 
-Suponha que o pai de cada elemento (identificado por um número de 1 a n) está salvo no vetor dicionário pai, onde pai[i] guarda o número do elemento que é o pai do elemento i.
+Suponha que o pai de cada elemento (identificado por um número de 1 a n) está salvo no dicionário pai, onde pai[i] guarda o número do elemento que é o pai do elemento i.
 
-Desse modo, para encontrar o patriarca de i, basta olharmos seus ancestrais um a um até encontrarmos um patriarca (alguém que é pai de si 
+Desse modo, para encontrar o patriarca de i, basta olharmos seus ancestrais um a um até encontrarmos um patriarca (alguém que é pai de si
 mesmo).
 
-<p align='center'>
-<img src='../assets/union1.png' width=400>
-</p>
+<figure><img src="../assets/union1.png" alt="union-find"><figcaption></figcaption></figure>
 
 Note que na figura acima há 5 elementos identificados por números de 1 a 5. Eles estão divididos em duas famílias, cujos patriarcas são 1 e 4.
 
 E para juntar dois elementos? Toda vez que dizemos que dois elementos quaisquer estão na mesma família, devemos fazer a união de todos os elementos das duas famílias em um conjunto só, ou seja: devemos associar o mesmo patriarca a todos eles. Para isso, basta que façamos o patriarca de uma família ser o pai do patriarca da outra, assim todos os descendentes do ex-patriarca agora serão descendentes do novo patriarca de todo o conjunto!
 
-<p align='center'>
-<img src='../assets/union2.png' width=400>
-</p>
+<figure><img src="../assets/union2.png" alt="faz o 1 ser pai da família do 4"><figcaption></figcaption></figure>
 
-## 🔗 Implementação
+## 📝 Implementação
 
 Em python, podemos implementar o Union-Find da seguinte forma:
 
@@ -77,7 +73,7 @@ Note que a função `find` agora é recursiva, e a compressão de caminhos só �
 
 Ainda podemos fazer mais uma mudança para melhorar a eficiência: vamos fazer com que o patriarca de uma família seja aquele que tem mais elementos.
 
-Com essas mudanças as famílias ficam mais "equilibradas"
+Com essas mudanças as famílias ficam mais "equilibradas", e evitamos ter famílias muito grandes e outras muito pequenas, o que poderia prejudicar a eficiência do Union-Find.
 
 ```py
 pai = {i: i for i in range(1, n + 1)} # inicialmente, cada elemento é pai de si mesmo

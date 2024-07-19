@@ -8,9 +8,9 @@ O algoritmo de Euclides é um algoritmo que é usado para calcular o máximo div
 
 O máximo divisor comum entre dois números inteiros é o maior número inteiro que divide ambos os números.
 
-Por exemplo, o máximo divisor comum entre 12 e 18 é 6, pois 6 é o maior número que divide 12 e 18.
+Por exemplo, o máximo divisor comum entre 12 e 18 é 6, pois 6 é o maior número que divide ambos 12 e 18.
 
-Uma solução ingênua para calcular o máximo divisor comum entre dois números seria começar no maior número e ir decrementando até encontrar um número que divide ambos os números.
+Uma solução ingênua para calcular o máximo divisor comum entre dois números seria começar no maior número e seguir decrementando até encontrar um número que divide ambos os números.
 
 ```py
 def mdc(a, b):
@@ -21,7 +21,7 @@ def mdc(a, b):
 
 O código acima funciona, mas é muito lento para números grandes.
 
-O algoritmo de Euclides é muito mais rápido, pois ele utiliza a seguinte propriedade:
+O algoritmo de Euclides é muito mais rápido, pois ele utiliza a seguinte propriedade matemática:
 
 > Seja `a` e `b` dois números inteiros, com `a > b`. O máximo divisor comum entre `a` e `b` é igual ao máximo divisor comum entre `b` e `a % b`.
 
@@ -49,11 +49,11 @@ O algoritmo de Euclides também pode ser usado para calcular o mínimo múltiplo
 
 O MMC de dois números inteiros é o menor número inteiro que é múltiplo de ambos os números.
 
-Por exemplo, o mínimo múltiplo comum entre 12 e 18 é 36, pois 36 é o menor número que é múltiplo de 12 e 18.
+Por exemplo, o mínimo múltiplo comum entre 12 e 18 é 36, pois 36 é o menor número que é múltiplo de ambos 12 e 18.
 
 Podemos usar a seguinte propriedade para calcular o mínimo múltiplo comum entre dois números inteiros:
 
-> mmc(a,b) = a * b / mdc(a,b)
+> mmc(a,b) = a \* b / mdc(a,b)
 
 Ou seja, o mínimo múltiplo comum entre dois números inteiros é igual ao produto entre os dois números dividido pelo máximo divisor comum entre eles.
 

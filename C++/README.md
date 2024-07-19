@@ -1,3 +1,11 @@
+# ⚙️ Por que usar C++?
+
+C++ é uma ótima linguagem para competições de programação, pela sua alta velocidade de execução e funções e estruturas pré-definidas na sua biblioteca padrão.
+
+Também, ela é a linguagem mais utilizada nas fases mais avançadas das competições, como a Maratona de Programação da SBC e a ICPC:
+
+<figure><img src="../assets/c++est.png" alt="C++ nas fases da maratona de 2023"><figcaption></figcaption></figure>
+
 # ⚙️ Conteúdo
 
 0. [Complexidade](complexidade.md)

@@ -2,11 +2,9 @@
 
 ## 📚 Introdução
 
-Uma fila de prioridade em Python é implementada usando a biblioteca padrão heapq.
+No artigo anterior vimos como implementar filas e pilhas em Python, agora veremos sobre filas de prioridade.
 
-A propriedade dessa estrutura em Python é que cada elemento da fila tem uma prioridade associada a ele e o elemento com a maior prioridade é sempre removido primeiro.
-
-Elementos com maior prioridade, são os menores elementos, então quando você insere um elemento na fila, ele é colocado em uma posição que mantém a fila ordenada.
+A característica que difere uma fila de prioridade de uma fila comum é que os elementos são retirados da fila de acordo com sua prioridade, e não necessariamente na ordem em que foram adicionados.
 
 ## 📝 Implementação
 
@@ -22,8 +20,14 @@ fila = [5, 3, 1, 4, 2]
 # Inicializa a fila de prioridade
 heapq.heapify(fila)
 
-print(fila)
+print(fila) # [1, 2, 5, 4, 3]
 ```
+
+Perceba a saída do print, os elementos não estão na ordem em que foram adicionados, nem em ordem crescente, e nem decrescente! O que está acontecendo aqui?
+
+A função `heapify` faz com que nossa lista vire uma fila de prioridade, essa estrutura garante que o próximo elemento a ser retirado da fila será o menor elemento da lista, ou seja, o elemento com maior prioridade (nesse caso, pelo menos).
+
+Ela não garante que a lista esteja ordenada, mas sim que o próximo elemento a ser retirado será o menor elemento da lista.
 
 ### 📋 Adicionando elementos à fila de prioridade
 
@@ -34,7 +38,7 @@ import heapq
 
 fila = [5, 3, 1, 4, 2]
 
-# Inicializa a fila 
+# Inicializa a fila
 heapq.heapify(fila)
 
 # Adiciona um elemento
@@ -45,6 +49,8 @@ menor = heapq.heappop(fila)
 
 print(fila)
 ```
+
+Sempre que usamos a função `heappush` e `heappop` na nossa fila de prioridade, a função `heapify` é chamada internamente para garantir sua característica.
 
 ### 📋 Exemplo de uso
 
@@ -73,9 +79,7 @@ O código acima adiciona uma tupla com o poder do pokemon e seu nome na fila de 
 
 Quando uma batalha ocorre, removemos o pokemon mais forte da fila e imprimimos seu nome, após isso adicionamos o pokemon de volta na fila com seu novo poder.
 
-## 📚 Leia mais
-
-- [GeeksforGeeks - Heap Queue in Python](https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/)
+Esse exemplo mostra o poder de uma fila de prioridade, em exercícios que precisamos priorizar tarefas, ou escolher elementos com base em certas características, uma fila de prioridade é uma escolha excelente!
 
 ## 🧑‍🏫 Exercícios
 
