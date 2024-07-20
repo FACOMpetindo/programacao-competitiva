@@ -41,31 +41,28 @@ O código abaixo mostra uma implementação desse algoritmo em C++:
 using namespace std;
 
 struct gas {
-  double preco, estoq; 
-}; // declaro a struct gas
+  double preco, estoq;
+};
 
-bool compara(gas x, gas y) { //Cria a função para comparar tipo gas
-  return x.preco < y.preco; 
-} 
+bool compara(gas x, gas y) {
+  return x.preco < y.preco;
+}
 
 gas forn[MAXN]; // crio um array de gas de nome "forn" para representar a lista
 
-// declaro as variáveis que vou usar
 int n;
 double d, custo;
 
 int main() {
-  cin >> n >> d;  // leio os valores de n e d
+  cin >> n >> d;
 
   // leio o preço e o estoque de cada fornecedor
   for (int i=1; i<=n; i++) {
     cin >> forn[i].preco >> forn[i].estoq;
   }
 
-  // ordeno o veotor de gas
   sort(forn+1, forn+n+1, compara);
 
-  // percorro o vetor
   for (int i=1; i<=n; i++) {
     // o fornecedor davez será o que estou olhando no vetor, no momento
     gas davez=forn[i];
@@ -73,7 +70,7 @@ int main() {
     // se todo o seu estoque não consegue preencher o que ainda preciso
     if (davez.estoq < d){
       custo+=davez.estoq*davez.preco; // somo à custo o valor de comprar todo o estoque
-      d-=davez.estoq; // e subtraio de d o litros que comprei
+      d-=davez.estoq; // e subtraio de d os litros que comprei
     }
     // caso contrário, ou seja, dá pra encher tudo só com esse fornecedor
     else {
@@ -96,12 +93,12 @@ int main() {
 }
 ```
 
-## 🤔 Por que funciona?
-
-A ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação.
+A ideia de um algoritmo guloso é sempre escolher a opção que parecer ideal, sem se preocupar com as consequências dessa ação, isso nos ajuda a reduzir a complexidade de um problema, enquanto ainda conseguimos uma solução eficiente.
 
 No caso do exemplo, a opção ideal é sempre comprar do fornecedor mais barato, pois assim gastamos menos dinheiro.
 
-## Exercícios
+## 🧑‍🏫 Exercícios
 
 - Exercício [2387](https://www.beecrowd.com.br/judge/pt/problems/view/2387) do Beecrowd, que caiu na OBI 2010, esse exercício é um ótimo exemplo de um problema que pode ser resolvido com um algoritmo guloso.
+
+- Exercício [2095](https://www.beecrowd.com.br/judge/pt/problems/view/2095) do Beecrowd, que caiu na OBI 2010, outro bom exemplo de como podemos resolver exercícios complexos de mandeira relativamente fácil pensando de forma gulosa.

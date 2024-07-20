@@ -3,6 +3,7 @@
 - [Treinamento OBI](README.md)
 - [C++](C++/README.md)
   - [Complexidade de Algoritmos](C++/complexidade.md)
+  - [Entradas e saídas](C++/entradas_saidas.md)
   - [Conjuntos](C++/conjuntos.md)
   - [Crivo de Eratóstenes](C++/crivo.md)
   - [Algoritmo de Euclides](C++/euclides.md)

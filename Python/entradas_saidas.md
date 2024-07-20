@@ -38,7 +38,7 @@ Antes de continuar, é importante conversar um pouco sobre os diferentes tipos d
 
 <figure><img src="../assets/1410.png" alt="Exercício 1410 do Beecrowd"><figcaption></figcaption></figure>
 
-A entrada pode parecer complicada, mas note que a primeira linha lida nos indica exatamente quantos valores vem a seguir, e o fim é indicado por dois valores 0 seguidos, ent˜ao podemos ler a entrada da seguinte forma:
+A entrada pode parecer complicada, mas note que a primeira linha lida nos indica exatamente quantos valores vem a seguir, e o fim é indicado por dois valores 0 seguidos, então podemos ler a entrada da seguinte forma:
 
 ```py
 while True:
@@ -64,7 +64,7 @@ while True:
 
 ```
 
-Em alguns problemas, precisaremos ler centenas de linhas com centenas de valores, nesses casos, é recomendável usar fast io, ou métodos rápidos de entrada e saída, o jeito mais rápido de ler valores em Python é usando o `sys.stdin.readline()`:
+Existe algo a mais que podemos fazer para deixar nossas entradas e saídas mais rápidas, isso é chamado de fast io, ou métodos rápidos de entrada e saída, o jeito mais rápido de ler valores em Python é usando o `sys.stdin.readline()`:
 
 ```py
 import sys
