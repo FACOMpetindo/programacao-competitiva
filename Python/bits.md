@@ -145,9 +145,9 @@ x ^= (1 << 2) # 1 (001 em binário)
 
 ## 🚀 Demonstração
 
-Falamos bastante sobre diversas operações diferentes que podem ser feitas com bits, mas como isso pode ser útil nos problemas? Vamos ver um exemplo, no exercício 2544 do Beecrowd:
+Falamos bastante sobre diversas operações diferentes que podem ser feitas com bits, mas como isso pode ser útil nos problemas? Vamos ver um exemplo, no exercício 1026 do Beecrowd:
 
-<figure><img src="../assets/2544.png" alt="Exercício 2544 do Beecrowd"><figcaption></figcaption></figure>
+<figure><img src="../assets/1026.png" alt="Exercício 1026 do Beecrowd"><figcaption></figcaption></figure>
 
 Nesse exercício, temos que escrever um programa que soma da forma incorreta, assim como o circuito feito pelo Mofiz, note que, pelo exemplo de soma que ele deu, 0 + 0 = 0; 1 + 0 = 1 e 1 + 1 = 0. Isso é a mesma coisa que o operador `xor`! Então podemos fazer o seguinte código:
 
@@ -164,9 +164,9 @@ E com isso resolvemos o problema de uma maneira extremamente simples!
 
 ## 🧑‍🏫 Exercícios
 
-- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, tente reproduzir a solução que fizemos acima.
+- Exercício [1026](https://www.beecrowd.com.br/judge/pt/problems/view/1026) do Beecrowd, tente reproduzir a solução que fizemos acima.
 
-- Exercício [1026](https://www.beecrowd.com.br/judge/pt/problems/view/1026) do Beecrowd, também é um ótimo exercício para praticar manipulação de bits.
+- Exercício [2544](https://www.beecrowd.com.br/judge/pt/problems/view/2544) do Beecrowd, também é um ótimo exercício para praticar manipulação de bits.
 
 - Exercício [2091](https://www.beecrowd.com.br/judge/pt/problems/view/2290) do Beecrowd, é um pouco mais desafiante, mas mostra mais uma vez como a manipulação de bits pode ser útil.
 
