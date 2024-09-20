@@ -2,7 +2,7 @@
 
 ## 📚 Introdução
 
-O estimado Dr. Kapi Vara da UFMS foi contratado para pavimentar as estradas do Mato Grosso do Sul, de forma que todas as cidades do estado sejam acessíveis por estradas pavimentadas. O Dr. Vara sabe que o custo de pavimentação de uma estrada entre duas cidades é proporcional à distância entre elas. Ele quer escolher as estradas de forma a ter o menor custo possível, mas ele não sabe por onde começar. Sabendo das suas habilidades em programação, ele pediu sua ajuda para resolver esse problema.
+O estimado Dr. Kapi Vara da UFMS foi contratado para pavimentar as estradas do Mato Grosso do Sul, de forma que todas as cidades do estado sejam acessíveis por estradas pavimentadas. Ele sabe que o custo de pavimentação de uma estrada entre duas cidades é proporcional à distância entre elas. O Dr. Kapi Vara quer escolher as estradas de forma a ter o menor custo possível, mas ele não sabe por onde começar. Sabendo das suas habilidades em programação, ele pediu sua ajuda para resolver esse problema.
 
 <!-- Adicione mais explicações sobre o conceito de árvore -->
 
@@ -123,8 +123,8 @@ def kruskal(arestas):
 n, m = map(int, input().split()) # número de vértices e arestas do grafo
 
 # inicialmente, cada vertice é pai de si mesmo
-pai = {i: i for i in range(1, n + 1)}
-peso = {i: 0 for i in range(1, n + 1)}  # usamos os pesos para otimizar o find
+pai = {i: i for i in range(n + 1)}
+peso = {i: 0 for i in range(n + 1)}  # usamos os pesos para otimizar o find
 
 arestas = [{"x": 0, "y": 0, "dist": 0} for _ in range(m)]
 
@@ -141,3 +141,5 @@ Como dito anteriormente, a complexidade do algoritmo é `O(M * log N)`, onde M �
 Podemos ver então, que o algoritmo de Kruskal é uma ótima opção para encontrar a árvore geradora mínima de um grafo, devido a sua eficiência e relativa simplicidade de implementação.
 
 ## 🧑‍🏫 Exercícios
+
+- Exercício [1152](https://www.beecrowd.com.br/judge/pt/problems/view/1152) do Beecrowd, onde precisamos minimizar os custos de iluminação de uma cidade.
