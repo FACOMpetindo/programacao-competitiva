@@ -6,7 +6,7 @@ O estimado Dr. Kapi Vara da UFMS foi contratado para pavimentar as estradas do M
 
 <!-- Adicione mais explicações sobre o conceito de árvore -->
 
-Para resolver esse problema, podemos modelar as cidades como vértices e as estradas existentes como arestas de um grafo, o custo da pavimentação, seria o peso das nossas arestas. O problema, então, se torna encontrar a árvore geradora mínima desse grafo, ou seja, a árvore que conecta todos os vértices com o menor custo (soma dos pesos) possível.
+Para resolver esse problema, podemos modelar as cidades como vértices e as estradas existentes como arestas de um grafo, o custo da pavimentação, seria o peso das nossas arestas. O problema, então, se torna encontrar a árvore geradora mínima (em inglês, Minimum Spanning Tree, MST) desse grafo, ou seja, a árvore que conecta todos os vértices com o menor custo (soma dos pesos) possível.
 
 Vejamos o seguinte grafo:
 
@@ -66,9 +66,9 @@ A próxima aresta é (5, 6), como os vértices 5 e 6 não estão no mesmo conjun
 
 E assim montamos nossa árvore geradora mínima!
 
-Note que ela é diferente da árvore geradora mínima que mostramos anteriormente, mas ambas têm o mesmo peso.
+Note que ela é diferente da árvore geradora mínima que mostramos anteriormente, mas ambas têm o mesmo peso total.
 
-Perceba também que esse algoritmo é eficiente, a complexidade dele é `O(M * log N)`, onde M é o número de arestas e N é o número de vértices e que ele implementa a ideia de um algoritmo guloso, já que ordenamos as arestas e só verificamos se podemos adicioná-las à árvore geradora mínima se elas não formarem um ciclo, mas como sempre começamos pelas menores arestas, garantimos que a árvore geradora mínima terá o menor peso possível.
+Perceba também que esse algoritmo é eficiente, a complexidade dele é `O(M * log N)`, onde M é o número de arestas e N é o número de vértices e que ele implementa a ideia de um algoritmo guloso, já que ordenamos as arestas e só verificamos se podemos adicioná-las à árvore caso elas não formem um ciclo, sem fazer nenhuma verificação a mais, mas como sempre começamos pelas menores arestas, garantimos que a MST terá o menor peso possível.
 
 ## 📝 Implementação
 
