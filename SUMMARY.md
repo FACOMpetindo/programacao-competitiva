@@ -27,4 +27,4 @@
   - [Union-Find](Python/union_find.md)
   - [Menor caminho - 1](Python/menor_caminho_1.md)
   - [Menor caminho - 2](Python/menor_caminho_2.md)
-  - [Árvore geradora mínima](Python/kruskal.md)
+  - [Algoritmo de Kruskal](Python/kruskal.md)

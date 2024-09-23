@@ -32,7 +32,7 @@ Mas como verificar se uma aresta forma um ciclo com as arestas já escolhidas?
 
 Para isso podemos utilizar a teoria dos conjuntos! Podemos representar cada vértice como um conjunto, e a cada aresta adicionada, unimos os conjuntos dos vértices que ela conecta. Se, ao tentar adicionar uma aresta, os vértices que ela conecta já estão no mesmo conjunto, então ela forma um ciclo.
 
-Sendo assim, podemos utilizar um algoritmo que já vimos anteriormente, o algoritmo de [Union-Find](union_find.md), vamos lembrar também que esse algoritmo é muito eficiente (`O(log n)`!), para verificar se uma aresta forma um ciclo.
+Sendo assim, podemos utilizar um algoritmo que já vimos anteriormente, o algoritmo de [Union-Find](union_find.md), vamos lembrar também que esse algoritmo é muito eficiente (`O(log n)`), para verificar se uma aresta forma um ciclo.
 
 Vamos entender melhor simulando o algoritmo de Kruskal no grafo acima (agora com os vértices enumerados):
 
