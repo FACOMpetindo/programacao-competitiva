@@ -21,3 +21,4 @@ Ela é uma ótima escolha para competições de programação por sua facilidade
 12. [Union-Find](union_find.md)
 13. [Menor caminho - 1](menor_caminho_1.md)
 14. [Menor caminho - 2](menor_caminho_2.md)
+15. [Algoritmo de Kruskal](kruskal.md)
