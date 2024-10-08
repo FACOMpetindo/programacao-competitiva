@@ -10,7 +10,7 @@ Para resolver esse problema, podemos modelar as cidades como vértices e as estr
 
 Vejamos o seguinte grafo:
 
-<figure><img src="../assets/MST-1.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
+<figure><img src="../assets/teste2.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
 
 Sabemos que, o menor número de arestas que precisamos ter para conectar todos os vértices de um grafo é o número de vértices - 1. No caso do grafo acima, precisamos de 5 arestas para conectar todos os vértices, existem várias formas de escolher essas arestas, vejamos duas delas:
 
