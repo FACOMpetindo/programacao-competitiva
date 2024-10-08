@@ -10,12 +10,12 @@ Para resolver esse problema, podemos modelar as cidades como vértices e as estr
 
 Vejamos o seguinte grafo:
 
-<figure><img src="../assets/teste2.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST1.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
 
 Sabemos que, o menor número de arestas que precisamos ter para conectar todos os vértices de um grafo é o número de vértices - 1. No caso do grafo acima, precisamos de 5 arestas para conectar todos os vértices, existem várias formas de escolher essas arestas, vejamos duas delas:
 
-<figure><img src="../assets/MST-2.png" alt="uma árvore geradora do grafo"><figcaption></figcaption></figure>
-<figure><img src="../assets/MST-3.png" alt="outra árvore geradora do grafo"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST2.png" alt="uma árvore geradora do grafo"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST3.png" alt="outra árvore geradora do grafo"><figcaption></figcaption></figure>
 
 Note que ambos exemplos são árvores geradoras do grafo, entretanto, a soma dos pesos das arestas da segunda árvore é consideravelmente menor, ela é um exemplo de árvore geradora mínima. Podem existir várias árvores geradoras mínimas para um grafo, mas todas elas terão o mesmo peso.
 
@@ -36,33 +36,33 @@ Sendo assim, podemos utilizar um algoritmo que já vimos anteriormente, o algori
 
 Vamos entender melhor simulando o algoritmo de Kruskal no grafo acima (agora com os vértices enumerados):
 
-<figure><img src="../assets/MST-4.png" alt="mesmo grafo anterior com os vértices enumerados"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST4.png" alt="mesmo grafo anterior com os vértices enumerados"><figcaption></figcaption></figure>
 
 As arestas listadas em ordem crescente de peso são: (1, 5), (1, 2), (2, 3), (3, 5), (4, 5), (5, 6), (1, 6), (2, 5), (3, 4)
 
 Começamos pela menor aresta, como os vértices 1 e 5 não estão no mesmo conjunto, adicionamos a aresta (1, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/MST-5.png" alt="ligando as arestas 1 e 5"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST5.png" alt="ligando as arestas 1 e 5"><figcaption></figcaption></figure>
 
 A próxima aresta é (1, 2), como os vértices 1 e 2 não estão no mesmo conjunto, adicionamos a aresta (1, 2) à árvore geradora mínima:
 
-<figure><img src="../assets/MST-7.png" alt="ligando as arestas 1 e 2"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST6.png" alt="ligando as arestas 1 e 2"><figcaption></figcaption></figure>
 
 A próxima aresta é (2, 3), como os vértices 2 e 3 não estão no mesmo conjunto, adicionamos a aresta (2, 3) à árvore geradora mínima:
 
-<figure><img src="../assets/MST-8.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST7.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
 
 A próxima aresta é (3, 5), porém perceba que os vértices 3 e 5 estão no mesmo conjunto, então não podemos adicionar essa aresta, pois ela formaria um ciclo:
 
-<figure><img src="../assets/MST-9.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST8.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
 
 A próxima aresta é (4, 5), como os vértices 4 e 5 não estão no mesmo conjunto, adicionamos a aresta (4, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/MST-10.png" alt="décima imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST9.png" alt="décima imagem do dijkstra"><figcaption></figcaption></figure>
 
 A próxima aresta é (5, 6), como os vértices 5 e 6 não estão no mesmo conjunto, adicionamos a aresta (5, 6) à árvore geradora mínima:
 
-<figure><img src="../assets/MST-11.png" alt="décima terceira imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST10.png" alt="décima terceira imagem do dijkstra"><figcaption></figcaption></figure>
 
 E assim montamos nossa árvore geradora mínima!
 
