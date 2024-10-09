@@ -12,7 +12,7 @@ Vejamos o seguinte grafo:
 
 <figure><img src="../assets/MST1.png" alt="um grafo conexo com 6 vértices"><figcaption></figcaption></figure>
 
-Sabemos que, o menor número de arestas que precisamos ter para conectar todos os vértices de um grafo é o número de vértices - 1. No caso do grafo acima, precisamos de 5 arestas para conectar todos os vértices, existem várias formas de escolher essas arestas, vejamos duas delas:
+Sabemos que, o menor número de arestas que precisamos ter para conectar todos os vértices de um grafo é o número de vértices - 1 (denotamos |V| - 1). No caso do grafo acima, precisamos de 5 arestas para conectar todos os vértices, existem várias formas de escolher essas arestas, vejamos duas delas:
 
 <figure><img src="../assets/MST2.png" alt="uma árvore geradora do grafo"><figcaption></figcaption></figure>
 <figure><img src="../assets/MST3.png" alt="outra árvore geradora do grafo"><figcaption></figcaption></figure>
@@ -42,31 +42,33 @@ As arestas listadas em ordem crescente de peso são: (1, 5), (1, 2), (2, 3), (3,
 
 Começamos pela menor aresta, como os vértices 1 e 5 não estão no mesmo conjunto, adicionamos a aresta (1, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/MST5.png" alt="ligando as arestas 1 e 5"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST5.png" alt="adicionando a aresta (1, 5) com peso 1"><figcaption></figcaption></figure>
 
 A próxima aresta é (1, 2), como os vértices 1 e 2 não estão no mesmo conjunto, adicionamos a aresta (1, 2) à árvore geradora mínima:
 
-<figure><img src="../assets/MST6.png" alt="ligando as arestas 1 e 2"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST6.png" alt="adicionando a aresta (1, 2) com peso 2"><figcaption></figcaption></figure>
 
 A próxima aresta é (2, 3), como os vértices 2 e 3 não estão no mesmo conjunto, adicionamos a aresta (2, 3) à árvore geradora mínima:
 
-<figure><img src="../assets/MST7.png" alt="sexta imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST7.png" alt="adicionando a aresta (2, 3) com peso 3"><figcaption></figcaption></figure>
 
 A próxima aresta é (3, 5), porém perceba que os vértices 3 e 5 estão no mesmo conjunto, então não podemos adicionar essa aresta, pois ela formaria um ciclo:
 
-<figure><img src="../assets/MST8.png" alt="oitava imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST8.png" alt="analisamos a aresta (3, 5) mas não adicionamos ela"><figcaption></figcaption></figure>
 
 A próxima aresta é (4, 5), como os vértices 4 e 5 não estão no mesmo conjunto, adicionamos a aresta (4, 5) à árvore geradora mínima:
 
-<figure><img src="../assets/MST9.png" alt="décima imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST9.png" alt="adicionando a aresta (5, 4) com peso 4"><figcaption></figcaption></figure>
 
 A próxima aresta é (5, 6), como os vértices 5 e 6 não estão no mesmo conjunto, adicionamos a aresta (5, 6) à árvore geradora mínima:
 
-<figure><img src="../assets/MST10.png" alt="décima terceira imagem do dijkstra"><figcaption></figcaption></figure>
+<figure><img src="../assets/MST10.png" alt="adicionando a aresta (5, 6) com peso 4"><figcaption></figcaption></figure>
 
-E assim montamos nossa árvore geradora mínima!
+Como já selecionamos |V| - 1 arestas, podemos parar por aqui, finalmente, a árvore geradora mínima do grafo é:
 
-Note que ela é diferente da árvore geradora mínima que mostramos anteriormente, mas ambas têm o mesmo peso total.
+<figure><img src="../assets/MST11.png" alt="árvore geradora mínima final com as arestas (1, 2), (2, 3), (1, 5), (5, 6) e (5, 4)"><figcaption></figcaption></figure>
+
+Note que ela é diferente da árvore geradora mínima que mostramos anteriormente, mas ambas têm o mesmo peso total, que é 14.
 
 Perceba também que esse algoritmo é eficiente, a complexidade dele é `O(M * log N)`, onde M é o número de arestas e N é o número de vértices e que ele implementa a ideia de um algoritmo guloso, já que ordenamos as arestas e só verificamos se podemos adicioná-las à árvore caso elas não formem um ciclo, sem fazer nenhuma verificação a mais, mas como sempre começamos pelas menores arestas, garantimos que a MST terá o menor peso possível.
 
