@@ -88,7 +88,7 @@ def dfs(s):
 
 ### ⚔️ DFS vs BFS
 
-Podemos ver a diferença entre os dois algoritmos no gif abaixo:
+Podemos ver a diferença entre os dois algoritmos no [gif abaixo](https://media.hackerearth.com/blog/wp-content/uploads/2015/05/dfsbfs_animation_final.gif):
 
 <figure><img src="../assets/dfs-bfs.gif" alt="bfs vs dfs"><figcaption></figcaption></figure>
 

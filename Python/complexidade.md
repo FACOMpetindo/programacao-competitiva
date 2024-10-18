@@ -61,7 +61,7 @@ Aqui estão alguns exemplos das complexidades de tempo mais comuns:
 - **O(n^3)**: Cúbica
 - **O(2^n)**: Exponencial
 
-É importante se atentar a complexidade de tempo de um algoritmo, pois ela pode ser a diferença entre um algoritmo que roda em 1 segundo e um que roda em 1 minuto, como podemos ver no gráfico abaixo:
+É importante se atentar a complexidade de tempo de um algoritmo, pois ela pode ser a diferença entre um algoritmo que roda em 1 segundo e um que roda em 1 minuto, como podemos ver no [gráfico abaixo](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/):
 
 <figure><img src="https://www.raebear.net/media/2017/12/jIGhf.png" alt="Gráfico de complexidades"><figcaption></figcaption></figure>
 
@@ -73,7 +73,7 @@ Como vimos no gráfico acima, vamos tentar evitar ao máximo algoritmos com comp
 
 Vamos pensar em um exercício que nos peça pra achar o menor valor em um vetor, qual a menor complexidade possível para esse problema?
 
-A menor complexidade possível é `O(n)`! pois precisamos olhar para cada elemento do vetor para saber qual é o menor valor, não tem como fazer isso sem olhar para cada elemento, veremos problemas muito mais complicados que esse mais para frente, e teremos que usar algoritmos com complexidades ainda piores, assim, é importante entender qual complexidade é aceitável levando em conta o tempo disponível e o tamanho da entrada, para isso, consulte a tabela abaixo:
+A menor complexidade possível é `O(n)`! pois precisamos olhar para cada elemento do vetor para saber qual é o menor valor, não tem como fazer isso sem olhar para cada elemento, veremos problemas muito mais complicados que esse mais para frente, e teremos que usar algoritmos com complexidades ainda piores, assim, é importante entender qual complexidade é aceitável levando em conta o tempo disponível e o tamanho da entrada, para isso, consulte a [tabela abaixo](http://i.imgur.com/l8ANHj4.png):
 
 <figure><img src="../assets/piores-compl.png" alt="Piores complexidades aceitáveis"><figcaption></figcaption></figure>
 
