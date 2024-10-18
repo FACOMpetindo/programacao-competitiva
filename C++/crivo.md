@@ -59,7 +59,7 @@ bool eh_primo(int n) {
 
 Agora o algoritmo está bem mais rápido, com uma complexidade de `O(Q*sqrt(N))`, porém para um número Q muito grande, esse código ainda pode demorar muito para responder para todos os N números.
 
-Estamos esquecendo de algo muito importante! Se um dado número é primo, então duas vezes esse número não é primo, 3 vezes esse número não é primo e assim por diante, podemos visualizar isso na animação abaixo:
+Estamos esquecendo de algo muito importante! Se um dado número é primo, então duas vezes esse número não é primo, 3 vezes esse número não é primo e assim por diante, podemos visualizar isso na [animação abaixo](https://pt.wikipedia.org/wiki/Ficheiro:New_Animation_Sieve_of_Eratosthenes.gif):
 
 <figure><img src="../assets/crivo.gif" alt="Animação de números primos"><figcaption></figcaption></figure>
 
