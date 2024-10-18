@@ -6,7 +6,7 @@ Um grafo é uma estrutura que consiste em um conjunto de pontos, chamados de vé
 
 Essa estrutura é usada para modelar relações entre diferentes elementos, como redes de computadores, mapas de estradas, redes sociais e muito mais. Em um grafo, os vértices representam os pontos e as arestas representam as ligações entre esses pontos.
 
-<figure><img src="https://www.revista-programar.info/wp-content/uploads/2007/09/grafo-exemplo-1.gif" alt="exemplo de grafo"><figcaption></figcaption></figure>
+<figure><img src="../assets/grafo.png" alt="exemplo de grafo"><figcaption></figcaption></figure>
 
 Existem diversos tipos de grafos, sendo os mais comuns:
 
@@ -88,7 +88,7 @@ def dfs(s):
 
 ### ⚔️ DFS vs BFS
 
-Podemos ver a diferença entre os dois algoritmos no gif abaixo:
+Podemos ver a diferença entre os dois algoritmos no [gif abaixo](https://media.hackerearth.com/blog/wp-content/uploads/2015/05/dfsbfs_animation_final.gif):
 
 <figure><img src="../assets/dfs-bfs.gif" alt="bfs vs dfs"><figcaption></figcaption></figure>
 

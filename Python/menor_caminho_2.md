@@ -33,11 +33,11 @@ Agora vamos para o vértice 2 e alteramos as distâncias entre os pares (1,3), (
 
 Note que a partir daqui o grafo começa a ficar com muitas arestas, então talvez seja melhor dar mais atenção a matriz de distâncias.
 
-De todas formas, vamos para o vértice 3, onde atualizamos as distâncias entre os pares (1,4) e (2,4).
+De todas forma, vamos para o vértice 3, onde atualizamos as distâncias entre os pares (1,4) e (2,4).
 
 <figure><img src="../assets/flw4.png" alt="quarta imagem do floyd-warshall"><figcaption></figcaption></figure>
 
-Agora vamos para o vértice 44, onde atualizamos as distâncias dos pares (1,5), (2,5), (3,5), (3,7) e (5,7).
+Agora vamos para o vértice 4, onde atualizamos as distâncias dos pares (1,5), (2,5), (3,5), (3,7) e (5,7).
 
 <figure><img src="../assets/flw5.png" alt="quinta imagem do floyd-warshall"><figcaption></figcaption></figure>
 
@@ -46,6 +46,8 @@ Quando executamos o processo nos vértices 5 e 6, nada é alterado. Quando execu
 <figure><img src="../assets/flw6.png" alt="sexta imagem do floyd-warshall"><figcaption></figcaption></figure>
 
 Com isso finalizamos o algoritmo e agora temos o menor caminho de qualquer vértice para qualquer outro vértice.
+
+<figure><img src="../assets/flw7.png" alt="sétima imagem do floyd-warshall"><figcaption></figcaption></figure>
 
 ## 📝 Implementação
 
