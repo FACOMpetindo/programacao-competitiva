@@ -28,3 +28,4 @@
   - [Menor caminho - 1](Python/menor_caminho_1.md)
   - [Menor caminho - 2](Python/menor_caminho_2.md)
   - [Algoritmo de Kruskal](Python/kruskal.md)
+- [Créditos](CREDITOS.md)
