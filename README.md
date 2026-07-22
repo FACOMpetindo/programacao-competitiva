@@ -22,6 +22,8 @@ Caso você queira ver a solução de algum exercício, você pode acessar o noss
 
 Caso queira contribuir, por favor acesse o nosso [repositório no GitHub](https://github.com/FACOMpetindo/programacao-competitiva) e veja o [guia de contribuição](https://github.com/FACOMpetindo/programacao-competitiva/blob/main/CONTRIBUTING.md).
 
+Alternativamente, caso queira apenas deixar seu feedback sobre o livreto, você pode preencher o seguinte [formulário](https://forms.gle/Sbqiu3wpTyuK3sEb7).
+
 ## 🧠 Pré-requisitos
 
 Não é necessário saber ambas Python e C++, os artigos são independentes, então você pode escolher a linguagem que preferir, ou até mesmo ler os dois.
