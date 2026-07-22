@@ -10,7 +10,7 @@ No Brasil, destacam-se três das principais competições da área:
 
 - A [Olimpíada Brasileira de Informática (OBI)](https://olimpiada.ic.unicamp.br/), destinada a estudantes do ensino fundamental, médio, técnico e aos primeiros anos da graduação;
 - A [Maratona SBC de Programação](https://maratona.sbc.org.br/), principal competição universitária do país, disputada por equipes de três integrantes;
-- A [Maratona Feminina de Programação (MFP)](https://maratonafeminina.com/), voltada para mulheres matriculadas em cursos de graduação, com o objetivo de incentivar sua participação na área de Computação.
+- A [Maratona Feminina de Programação (MFP)](https://mfp.ic.unicamp.br/), voltada para mulheres matriculadas em cursos de graduação, com o objetivo de incentivar sua participação na área de Computação.
 
 A Maratona SBC é realizada em equipes de três participantes, estimulando habilidades como colaboração, comunicação e divisão de tarefas durante a resolução dos problemas. Já a OBI e a MFP são competições individuais, nas quais cada participante resolve os desafios de forma independente.
 
