@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Treinamento OBI](README.md)
+- [Livreto FACOMpetindo](README.md)
 - [C++](C++/README.md)
   - [Complexidade de Algoritmos](C++/complexidade.md)
   - [Entradas e saídas](C++/entradas_saidas.md)
