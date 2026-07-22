@@ -2,11 +2,21 @@
 
 ## 🤵 Introdução
 
-Programação Competitiva é classificada como um esporte da mente, uma competição intelectual que foca no desenvolvimento das habilidades cognitivas. Busca incentivar a resolução de problemas dentro de um espaço de tempo determinado, de forma eficiente, para isso, é necessário conhecer algoritmos e estruturas de dados que auxiliam na resolução desses problemas.
+A Programação Competitiva pode ser classificada como um esporte da mente que desafia os participantes a resolver problemas algorítmicos de forma correta e eficiente dentro de um tempo limitado. Para isso, é necessário dominar estruturas de dados, algoritmos e técnicas de resolução de problemas, além de desenvolver habilidades como raciocínio lógico, criatividade e trabalho sob pressão.
 
-No Brasil destacam-se a Olimpíada Brasileira de Informática (OBI), que é uma competição de programação para alunos do ensino fundamental, médio, técnico, assim como calouros em cursos de graduação. A Maratona SBC de Programação e a Maratona Feminina de Programação, ambas voltadas para alunos de ensino superior.
+Além de seu caráter competitivo, a Programação Competitiva é uma excelente ferramenta de aprendizado. A prática constante contribui para o desenvolvimento da capacidade de analisar problemas, projetar soluções eficientes e escrever código de qualidade, habilidades valorizadas tanto na academia quanto no mercado de trabalho.
 
-O foco deste livreto é auxiliar e preparar alunos interessados em participarem de competições de programação, ou mesmo os que desejam somente melhorar suas habilidades em programação.
+No Brasil, destacam-se três das principais competições da área:
+
+- A [Olimpíada Brasileira de Informática (OBI)](https://olimpiada.ic.unicamp.br/), destinada a estudantes do ensino fundamental, médio, técnico e aos primeiros anos da graduação;
+- A [Maratona SBC de Programação](https://maratona.sbc.org.br/), principal competição universitária do país, disputada por equipes de três integrantes;
+- A [Maratona Feminina de Programação (MFP)](https://maratonafeminina.com/), voltada para mulheres matriculadas em cursos de graduação, com o objetivo de incentivar sua participação na área de Computação.
+
+A Maratona SBC é realizada em equipes de três participantes, estimulando habilidades como colaboração, comunicação e divisão de tarefas durante a resolução dos problemas. Já a OBI e a MFP são competições individuais, nas quais cada participante resolve os desafios de forma independente.
+
+Para quem deseja conhecer melhor o formato da Maratona SBC de Programação, um vídeo introdutório pode ser encontrado [aqui](https://www.youtube.com/watch?v=Q62A6hGhPlE).
+
+Este livreto tem como objetivo servir como um guia introdutório para estudantes interessados em Programação Competitiva. Ao longo dos capítulos serão apresentados algoritmos, estruturas de dados e técnicas fundamentais para a resolução de problemas, oferecendo uma base sólida tanto para quem pretende participar de competições quanto para quem deseja aprimorar suas habilidades em programação.
 
 ## 📖 Conteúdo
 
